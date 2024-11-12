@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlacomers</title>
+    <link rel="stylesheet" href="estilo.css">    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="container" id="loginContainer">
+        <h1>Login - Orlacomers</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Escrivi bu nome" required>
+
+        <label for="numero">Número:</label>
+        <input type="tel" id="numero" placeholder="Escrivi bu numero telfone" required>
+
+        <button id="loginButton">Entrar</button>
+    </div>
+
+    <div class="containerPrincipal" id="storeContainer" style="display:none;">
+        <nav>
+            <ul>
+                <li><a href="#" id="homeLink"><i class='bx bx-home'></i> principal</a></li>
+                <li><a href="#" id="cartLink"><i class='bx bx-cart-alt'></i> carinho <span id="cartCount">0</span></a></li>
+                <li><a href="#" id="profileLink"><i class='bx bx-user-circle'></i> Perfil</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="saudacao">Bem-vindo à Orlacomers, <span id="userName"></span>!</h1>
+
+        <div id="orderConfirmation" style="display:none;">
+            <h6>Seu código de pedido: <span id="orderCode"></span></h6>
+        </div>
+        
+        <h2 class="informacao"> suka kontra pruduto kuna buska bu pudi contatano pa mais informacoes</h2>
+
+        <div id="products">
+            <div class="product" data-product="bus" data-price="3000" data-image="./b1.jpg">
+                <img class="imgprodoct" src="../bus.jpg" alt="bolsa">
+                <h5>bus</h5>
+                <strong>3000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="bolsa" data-price="3000" data-image="./b1.jpg">
+                <img class="imgprodoct" src="../bus.jpg" alt="bolsa">
+                <h5>bolsa</h5>
+                <strong>3000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div id="cart" style="display:none;">
+            <h2>Carrinho</h2>
+            <ul id="cartItems"></ul>
+            <strong>Total: <span id="totalAmount">0.00</span>₣</strong>
+            <button id="checkoutButton">Finalizar Compra</button>
+        </div>
+
+        <div id="profile" style="display:none;">
+            <h2>Perfil</h2>
+            <p>Nome: <span id="profileName"></span></p>
+            <p>Número: <span id="profileNumber"></span></p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

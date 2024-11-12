@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    background-color: rgb(254, 45, 45);
+}
+
+/* Container de Login */
+#loginContainer {
+    width: 100%;
+    max-width: 295px; /* Largura máxima */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto; /* Centraliza */
+    height: 350px; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+label{
+    margin-right: 10rem;
+    
+}
+
+/* Dados de Perfil */
+#storeContainer {
+    margin-left: 2rem;
+    color: white;
+}
+
+#nome, #numero {
+    width: 210px;
+    height: 25px;
+    text-align: center;
+}
+
+#loginButton {
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: 2rem;
+}
+
+/* Corpo do site */
+.containerPrincipal {
+    width: 100%;
+}
+#orderCode{
+    color: #218838;
+    font-size: 14px;
+    background-color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    text-align: center;
+    flex: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#cartCount{
+    position: fixed;
+    top: 0;
+    left: 55px;
+    right: 0px;
+}
+i{
+    font-size: 34px;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Container de Produtos */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsivo */
+    gap: 10px;
+    padding: 5px;
+}
+
+.product {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+.imgprodoct {
+    width: 100%; /* Ocupa toda a largura do container */
+    height: auto; /* Mantém a proporção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #products {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+}
