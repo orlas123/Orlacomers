@@ -8,6 +8,7 @@ body {
     padding: 0;
     padding-top: 60px;
     background-color: rgb(250, 7, 7);
+    
 }
 
 /* Container de Login */
@@ -31,12 +32,13 @@ body {
 /* Dados de Perfil */
 #storeContainer {
     margin-left: 2rem;
-    color: white;   
+    color: white;
+   
 }
-
-#profile {
+#profile{
     width: 100%;
-    height: 350px;    
+    height: 350px;
+    
 }
 
 #nome, #numero {
@@ -58,7 +60,7 @@ body {
 }
 
 #orderCode {
-    color: black;
+    color: white;
     font-size: 14px;
     background-color: black;
 }
@@ -83,7 +85,8 @@ nav ul {
 nav ul li {
     text-align: center;
     flex: 1;
-    max-width: 1340px;   
+    max-width: 1340px;
+   
 }
 
 nav ul li a {
@@ -92,7 +95,7 @@ nav ul li a {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    width: 100%;
+   width: 100%;
 }
 
 #cart {
@@ -100,7 +103,10 @@ nav ul li a {
     max-width: 1340px; /* Se necessário, mantenha um max-width */
     border: 2px solid;
     margin: 0 auto; /* Centraliza */
-    height: 560px; 
+    height: 560px;
+ 
+   
+    
 }
 
 #cartCount {
@@ -112,28 +118,30 @@ nav ul li a {
 }
 
 #cartItems {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    list-style: none;   
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 10px;
+    list-style: none;
+   
+   
+    
 }     
-
-#checkoutButton {
-    color: black;
+#checkoutButton{
+    color:  black;
     background-color: white;
     border: 2px black;
     margin-left: 3rem;
 }
+#checkoutButton:hover{
+   background-color: #218838;
 
-#checkoutButton:hover {
-    background-color: #218838;
 }
-
-#orderCode {
+#orderCode{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     font-weight: bolder;
-    background-color: red;   
+    background-color: black;
+   
 }
 
 i {
@@ -162,29 +170,30 @@ button:hover {
     padding: 10px;
     width: 100%;
 }
-
-.quantity-controls {
-    width: 136px;
-    border: 2px solid white;
-    display: flex;
-    margin-bottom: 4px;
-    font-size: 14px;
-    padding: 0px;  
+.quantity-controls{
+   width: 136px;
+   border: 2px solid white;
+   display: flex;
+   margin-bottom: 4px;
+   font-size: 14px;
+   padding: 0px;
+  
+   
 }
-
-.remove {
-    width: 10px;   
+.remove{
+    width: 10px;
+   
 }
-
-.decrase {
+.decrase{
     width: 10px;
     font-size: 8px;
 }
-
-.incrase {
+.incrase{
     width: 10px;
     font-size: small;
 }
+
+
 
 .product {
     background-color: white;
@@ -195,9 +204,12 @@ button:hover {
     color: black;
     border-radius: 2px;
     width: 260px;
+   
+
 }
 
 .imgprodoct {
+     /* Ocupa toda a largura do container */
     height: 100%; /* Mantém a proporção */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
     border-radius: 2px;
@@ -220,58 +232,24 @@ button:hover {
     border: 2px solid white;
     margin-top: 2rem;
 }
-
-.coloborador {
+.coloborador{
     width: 300px;
     height: 200px;
-    margin-right: 5rem;
-    display: flex;
-    padding: 8px;
-    font-size: small;
+   margin-right: 5rem;
+   display: flex;
+   padding: 8px;
+   font-size: small;
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 1024px) {
-    nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
-        margin-top: 1rem;
-    }
-
-    #products {
-        grid-template-columns: repeat(2, 1fr); /* Três colunas em telas médias */
-    }
-}
-
 @media (max-width: 768px) {
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
-    }
-
-    #loginContainer {
-        width: 90%; /* Aumenta a largura em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
-    }
-
-    nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
-        margin-top: 1rem;
-    }
-
-    #cart {
-        height: auto; /* Ajusta a altura do carrinho */
-    }
-
-    .coloborador {
-        width: 100%; /* Ajusta a largura do colaborador */
-        margin-right: 0; /* Remove a margem */
-    }
-
-    #checkoutButton {
-        margin-left: 0; /* Remove a margem em telas pequenas */
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
     }
 }
