@@ -4,6 +4,7 @@ const loginContainer = document.getElementById('loginContainer');
 const userNameSpan = document.getElementById('userName');
 const profileNameSpan = document.getElementById('profileName');
 const profileNumberSpan = document.getElementById('profileNumber');
+const orderCodeSpan = document.getElementById('orderCode');
 
 const cartItemsList = document.getElementById('cartItems');
 const totalAmountSpan = document.getElementById('totalAmount');
@@ -34,20 +35,21 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 
         const listItem = document.createElement('li');
         listItem.innerHTML = `
-            <img src="${image}" alt="${product}" style="width: 110px; height: 100px;"> 
-            ${product} - ${price}₣ x <span class="cart-quantity">1</span>
+            <img src="${image}" alt="${product}" style="width: 138px; height: 130px;"> 
+            ${product} - ${price}₣ 
             <div class="quantity-controls">
-                <button class="decrease">-</button>
+                <button class="decrease">➖</button>
                 <span class="quantity">1</span>
-                <button class="increase">+</button>
+                <button class="increase">➕</button>
+                <button class="remove">🗑️</button> <!-- Botão de remover -->
             </div>`;
         
         cartItemsList.appendChild(listItem);
 
-        // Adicionar eventos de clique aos botões de quantidade
         const decreaseButton = listItem.querySelector('.decrease');
         const increaseButton = listItem.querySelector('.increase');
         const quantitySpan = listItem.querySelector('.quantity');
+        const removeButton = listItem.querySelector('.remove'); // Botão de remover
 
         decreaseButton.addEventListener('click', () => {
             let quantity = parseInt(quantitySpan.textContent);
@@ -65,6 +67,13 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
             updateTotal();
         });
 
+        removeButton.addEventListener('click', () => {
+            cartItemsList.removeChild(listItem); // Remove o item da lista
+            cartCount--;
+            cartCountSpan.textContent = cartCount;
+            updateTotal(); // Atualiza o total
+        });
+
         totalAmount += price;
         totalAmountSpan.textContent = totalAmount.toFixed(2);
         cartCount++;
@@ -72,7 +81,6 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
     });
 });
 
-// Função para atualizar o total
 function updateTotal() {
     totalAmount = 0;
     cartItemsList.querySelectorAll('li').forEach(item => {
@@ -83,54 +91,50 @@ function updateTotal() {
     totalAmountSpan.textContent = totalAmount.toFixed(2);
 }
 
-// Evento de checkout
 document.getElementById('checkoutButton').addEventListener('click', () => {
+    if (cartCount === 0) {
+        alert("O carrinho está vazio! Adicione produtos antes de finalizar a compra.");
+        return;
+    }
+
     const orderCode = Math.floor(Math.random() * 10000);
-    document.getElementById('orderCode').textContent = orderCode;
+    orderCodeSpan.textContent = orderCode;
     document.getElementById('orderConfirmation').style.display = 'block';
 
-    // Limpar o carrinho e voltar para a página principal
     cartItemsList.innerHTML = '';
     totalAmount = 0;
     cartCount = 0;
     totalAmountSpan.textContent = '0.00';
     cartCountSpan.textContent = '0';
-    document.getElementById('products').style.display = 'block';
+    document.getElementById('products').style.display = 'grid'; // Mantenha o estilo grid
     document.getElementById('cart').style.display = 'none';
     document.getElementById('profile').style.display = 'none';
 });
 
+// Função para mostrar a seção de produtos
+function showProducts() {
+    document.getElementById('products').style.display = 'grid'; // Mantenha o estilo grid
+    document.getElementById('cart').style.display = 'none';
+    document.getElementById('profile').style.display = 'none';
+}
+
 // Eventos para mostrar as seções
 document.getElementById('cartLink').addEventListener('click', (event) => {
     event.preventDefault();
-    const cart = document.getElementById('cart');
-    const profile = document.getElementById('profile');
-    const products = document.getElementById('products');
-
-    cart.style.display = 'block';
-    profile.style.display = 'none';
-    products.style.display = 'none';
+    document.getElementById('cart').style.display = 'block';
+    document.getElementById('profile').style.display = 'none';
+    document.getElementById('products').style.display = 'none';
 });
 
 document.getElementById('profileLink').addEventListener('click', (event) => {
     event.preventDefault();
-    const profile = document.getElementById('profile');
-    const cart = document.getElementById('cart');
-    const products = document.getElementById('products');
-
-    profile.style.display = 'block';
-    cart.style.display = 'none';
-    products.style.display = 'none';
+    document.getElementById('profile').style.display = 'block';
+    document.getElementById('cart').style.display = 'none';
+    document.getElementById('products').style.display = 'none';
 });
 
 // Evento para mostrar a seção de produtos
 document.getElementById('homeLink').addEventListener('click', (event) => {
     event.preventDefault();
-    const products = document.getElementById('products');
-    const cart = document.getElementById('cart');
-    const profile = document.getElementById('profile');
-
-    products.style.display = 'block';
-    cart.style.display = 'none';
-    profile.style.display = 'none';
+    showProducts();
 });
