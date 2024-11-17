@@ -1,15 +1,19 @@
+* {
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 60px;
-    background-color: rgb(254, 45, 45);
+    background-color: rgb(250, 7, 7);
 }
 
 /* Container de Login */
 #loginContainer {
     width: 100%;
-    max-width: 295px; /* Largura máxima */
+    max-width: 350px; /* Largura máxima */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -20,23 +24,24 @@ body {
     padding: 30px;
     text-align: center;
     margin: 0 auto; /* Centraliza */
-    height: 350px; 
+    height: 410px; 
     font-family: 'Times New Roman', Times, serif; 
-}
-label{
-    margin-right: 10rem;
-    
 }
 
 /* Dados de Perfil */
 #storeContainer {
     margin-left: 2rem;
-    color: white;
+    color: white;   
+}
+
+#profile {
+    width: 100%;
+    height: 350px;    
 }
 
 #nome, #numero {
     width: 210px;
-    height: 25px;
+    height: 30px;
     text-align: center;
 }
 
@@ -48,8 +53,11 @@ label{
 /* Corpo do site */
 .containerPrincipal {
     width: 100%;
+    max-width: 1300px; /* Se necessário, mantenha um max-width */
+    margin: 0 auto; /* Centraliza */
 }
-#orderCode{
+
+#orderCode {
     color: #218838;
     font-size: 14px;
     background-color: black;
@@ -69,12 +77,13 @@ nav ul {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 nav ul li {
     text-align: center;
     flex: 1;
+    max-width: 1340px;   
 }
 
 nav ul li a {
@@ -83,15 +92,51 @@ nav ul li a {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    width: 100%;
 }
 
-#cartCount{
-    position: fixed;
-    top: 0;
-    left: 55px;
-    right: 0px;
+#cart {
+    width: 100%; /* Ocupar 100% da largura */
+    max-width: 1340px; /* Se necessário, mantenha um max-width */
+    border: 2px solid;
+    margin: 0 auto; /* Centraliza */
+    height: 560px; 
 }
-i{
+
+#cartCount {
+    position: fixed;
+    top: 20px;
+    left: 60px;
+    right: 0px;
+    font-size: larger;
+}
+
+#cartItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;   
+}     
+
+#checkoutButton {
+    color: black;
+    background-color: white;
+    border: 2px black;
+    margin-left: 3rem;
+}
+
+#checkoutButton:hover {
+    background-color: #218838;
+}
+
+#orderCode {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bolder;
+    background-color: red;   
+}
+
+i {
     font-size: 34px;
 }
 
@@ -111,35 +156,122 @@ button:hover {
 /* Container de Produtos */
 #products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsivo */
-    gap: 10px;
-    padding: 5px;
+    grid-template-columns: repeat(5, 1fr); /* Responsivo */
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.quantity-controls {
+    width: 136px;
+    border: 2px solid white;
+    display: flex;
+    margin-bottom: 4px;
+    font-size: 14px;
+    padding: 0px;  
+}
+
+.remove {
+    width: 10px;   
+}
+
+.decrase {
+    width: 10px;
+    font-size: 8px;
+}
+
+.incrase {
+    width: 10px;
+    font-size: small;
 }
 
 .product {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
     color: black;
+    border-radius: 2px;
+    width: 260px;
 }
 
 .imgprodoct {
-    width: 100%; /* Ocupa toda a largura do container */
-    height: auto; /* Mantém a proporção */
+    height: 100%; /* Mantém a proporção */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
+    border-radius: 2px;
+    width: 100%;
+}
+
+.contatos {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.911);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.saudacao {
+    text-align: center;
+    border: 2px solid white;
+    margin-top: 2rem;
+}
+
+.coloborador {
+    width: 300px;
+    height: 200px;
+    margin-right: 5rem;
+    display: flex;
+    padding: 8px;
+    font-size: small;
 }
 
 /* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+        margin-top: 1rem;
+    }
+
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* Três colunas em telas médias */
+    }
+}
+
 @media (max-width: 768px) {
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
+    }
+
+    #loginContainer {
+        width: 90%; /* Aumenta a largura em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+        margin-top: 1rem;
+    }
+
+    #cart {
+        height: auto; /* Ajusta a altura do carrinho */
+    }
+
+    .coloborador {
+        width: 100%; /* Ajusta a largura do colaborador */
+        margin-right: 0; /* Remove a margem */
+    }
+
+    #checkoutButton {
+        margin-left: 0; /* Remove a margem em telas pequenas */
     }
 }
