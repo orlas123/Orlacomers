@@ -250,6 +250,6 @@ button:hover {
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
     }
 }
