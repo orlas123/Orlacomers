@@ -253,3 +253,8 @@ button:hover {
         grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
     }
 }
+@media (max-width: 600px) {
+    body {
+         background-color: rgb(250, 7, 7);
+    }
+}
