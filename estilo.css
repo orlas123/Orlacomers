@@ -240,6 +240,18 @@ button:hover {
    padding: 8px;
    font-size: small;
 }
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #products {
+        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
+    }
+}
 
 
 @media (max-width: 600px) {
