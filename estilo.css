@@ -241,7 +241,7 @@ button:hover {
    font-size: small;
 }
 /* Media Queries para Responsividade */
-@media (max-width: 50px) {
+@media (max-width: 500px) {
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
     }
