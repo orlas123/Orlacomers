@@ -167,7 +167,7 @@ button:hover {
     grid-template-columns: repeat(5, 1fr); /* Responsivo */
     gap: 5px;
     justify-content: center;
-    padding: 10px;
+    padding: 8px;
     width: 100%;
 }
 .quantity-controls{
@@ -203,7 +203,7 @@ button:hover {
     text-align: center;
     color: black;
     border-radius: 2px;
-    width: 260px;
+    width: 250px;
    
 
 }
@@ -241,7 +241,7 @@ button:hover {
    font-size: small;
 }
 /* Media Queries para Responsividade */
-@media (max-width: 590px) {
+@media (max-width: 580px) {
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
     }
@@ -250,13 +250,13 @@ button:hover {
 
 
 
-@media (max-width: 590px) {
+@media (max-width: 580px) {
     body {
          background-color: rgb(250, 7, 7);
         font-size:14px
     }
 }
-@media (max-width: 590px) {
+@media (max-width: 580px) {
     .containerPrincipal{
         width:100%
         
