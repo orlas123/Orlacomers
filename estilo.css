@@ -10,6 +10,19 @@ body {
     background-color: rgb(250, 7, 7);
     
 }
+id: css-content-stability
+name: CSS para Estabilidade do Conteúdo
+type: css
+content: |-
+  body {
+    overflow-x: hidden;
+    touch-action: manipulation;
+  }
+
+  .content {
+    position: relative;
+    will-change: transform;
+  }
 
 /* Container de Login */
 #loginContainer {
