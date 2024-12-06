@@ -2,26 +2,29 @@
 <html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-sclable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Orlacomers</title>
     <link rel="stylesheet" href="estilo.css">    
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="google-site-verification" content="CplfiMz73s_8D42mHyFcsDp03eg3bJzyl8QwNkShUvs" />
+    <link rel="icon" href="./imagens/LL.png" type="image/X-icon" style=" border-radius: 40px;">
+    <meta name="description" content="faça sua compra e encomendas na loja orlacomers com um preso ecesivel">
+    <link rel="manifest" href="/manifest.json">
+
 </head>
 
 <body>
     <div class="container" id="loginContainer">
         <h1>Login - Orlacomers</h1> 
         <label for="nome">Nome:</label><input type="text" id="nome" placeholder="Escrivi bu nome" required>
-
         <label for="numero">Número:</label><input type="tel" id="numero" placeholder="Escrivi bu numero telfone" required>
-
         <button id="loginButton">Entrar</button>
     </div>
 
     <div class="containerPrincipal" id="storeContainer" style="display:none;">
         <nav>
             <ul>
+                <img class="log" src="./imagens/LL.png" alt=""><h3 class="logp">orlacomers</h3>
                 <li><a href="#" id="homeLink"><i class='bx bx-home'></i> principal</a></li>
                 <li><a href="#" id="cartLink"><i class='bx bx-cart-alt'></i> carinho <span id="cartCount">0</span></a></li>
                 <li><a href="#" id="profileLink"><i class='bx bx-user-circle'></i> Perfil</a></li>
@@ -29,235 +32,259 @@
         </nav>
 
         <h1 class="saudacao">Bem-vindo à Orlacomers, <span id="userName"></span>!</h1>
-
-        
-        
+        <a href="#" id="sellerPanelLink">.</a>
 
         <div id="products">
-            <div class="product" data-product="bolsa" data-price="3000" data-image="imagens/bolassa.jpg">
+            <div class="product" data-product="bolsa" data-price="4000" data-image="imagens/bolassa.jpg">
                 <img class="imgprodoct" src="./imagens/bolassa.jpg" alt="">
                 <h5>bolsa</h5>
+                <strong>4000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="vestido andreia" data-price="8000" data-image="imagens/vestido andreia.jpg">
+                <img class="imgprodoct" src="./imagens/vestido andreia.jpg" alt="">
+                <h5>vestido andreia</h5>
+                <strong>8000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="jaket." data-price="3000" data-image="imagens/jaket.jpg">
+                <img class="imgprodoct" src="./imagens/jaket.jpg" alt="">
+                <h5>jaket</h5>
                 <strong>3000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="conjunto" data-price="2500" data-image="imagens/conjunto crepe.jpg">
-                <img class="imgprodoct" src="./imagens/conjunto crepe.jpg" alt="conjunto">
-                <h5>conjunto</h5>
-                <strong>2.500₣</strong>
+            </div>
+            <div class="product" data-product="airmax" data-price="7000" data-image="imagens/air1.jpg">
+                <img class="imgprodoct" src="./imagens/air1.jpg" alt="">
+                <h5>airmax</h5>
+                <strong>7000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="jaket" data-price="3000" data-image="imagens/jaket1.jpg">
-                <img class="imgprodoct" src="./imagens/jaket1.jpg" alt="jaket">
-                <h5>jaket</h5>
-                <strong>3.000₣</strong>
+            </div>
+            <div class="product" data-product="salto" data-price="4500" data-image="imagens/salto preto1.jpg">
+                <img class="imgprodoct" src="./imagens/salto preto1.jpg" alt="">
+                <h5>salto</h5>
+                <strong>4500₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="saia" data-price="2000" data-image="imagens/saia1.jpg">
-                <img class="imgprodoct" src="./imagens/saia1.jpg" alt="saia">
+            </div>
+            <div class="product" data-product="relogio1" data-price="9000" data-image="imagens/relogio1.jpg">
+                <img class="imgprodoct" src="./imagens/relogio1.jpg" alt="">
+                <h5>relogio</h5>
+                <strong>9000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="saia1" data-price="12000" data-image="imagens/saia1.jpg">
+                <img class="imgprodoct" src="./imagens/saia1.jpg" alt="">
                 <h5>saia</h5>
-                <strong>2.000₣</strong>
+                <strong>12000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="airmax" data-price="12000" data-image="imagens/air1.jpg">
-                <img class="imgprodoct" src="./imagens/air1.jpg" alt="airmax">
-                <h5>airmax</h5>
-                <strong>12.000₣</strong>
+            </div>
+            <div class="product" data-product="calsa" data-price="3000" data-image="imagens/calsa1.jpg">
+                <img class="imgprodoct" src="./imagens/calsa1.jpg" alt="">
+                <h5>calsa</h5>
+                <strong>3000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="vistido andreaia" data-price="5000" data-image="imagens/vestido andreia.jpg">
-                <img class="imgprodoct" src="./imagens/vestido andreia.jpg" alt="vestido andreia">
-                <h5>vestido andreia</h5>
-                <strong>5.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="salto" data-price="4000" data-image="imagens/salto castanho1.jpg">
-                <img class="imgprodoct" src="./imagens/salto castanho1.jpg" alt="salto">
-                <h5>salto</h5>
-                <strong>4.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="camiseta" data-price="900" data-image="imagens/camiseta1.jpg">
-                <img class="imgprodoct" src="./imagens/camiseta1.jpg" alt="camiseta">
-                <h5>camiseta</h5>
-                <strong>900₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="cap" data-price="1000" data-image="imagens/cap1.jpg">
-                <img class="imgprodoct" src="./imagens/cap1.jpg" alt="cap">
-                <h5>cap</h5>
-                <strong>1000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="relogio" data-price="3000" data-image="imagens/relogio1.jpg">
-                <img class="imgprodoct" src="./imagens/relogio1.jpg" alt="relogio">
-                <h5>relogio</h5>
-                <strong>2.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="sandalia1" data-price="3000" data-image="imagens/sandalia1.jpg">
-                <img class="imgprodoct" src="./imagens/sandalia1.jpg" alt="sandalia1">
+            </div>
+            <div class="product" data-product="sandalia" data-price="6000" data-image="imagens/sandalia1.jpg">
+                <img class="imgprodoct" src="./imagens/sandalia1.jpg" alt="">
                 <h5>sandalia</h5>
-                <strong>2.000₣</strong>
+                <strong>6000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="fixsport" data-price="3000" data-image="imagens/sapato1.jpg">
-                <img class="imgprodoct" src="./imagens/sapato1.jpg" alt="fixsport">
-                <h5>fixsport</h5>
-                <strong>3.000₣</strong>
+            </div>
+            <div class="product" data-product="vestido tutifruit" data-price="7500" data-image="imagens/vestido tutifruit.jpg">
+                <img class="imgprodoct" src="./imagens/vestido tutifruit.jpg" alt="">
+                <h5>vestido tutifruit</h5>
+                <strong>7500₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="calsa1" data-price="2000" data-image="imagens/calsa1.jpg">
-                <img class="imgprodoct" src="./imagens/calsa1.jpg" alt="sapato1">
-                <h5>calsa</h5>
-                <strong>2.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="calsa1" data-price="1500" data-image="imagens/cos glos.jpg">
-                <img class="imgprodoct" src="./imagens/cos glos.jpg" alt="glos">
-                <h5>glos</h5>
-                <strong>1.500₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>          
-            <div class="product" data-product="olenka" data-price="2500" data-image="imagens/cos olenka.jpg">
-                <img class="imgprodoct" src="./imagens/cos olenka.jpg" alt="olenka">
-                <h5>olenka</h5>
-                <strong>2.500₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-           
-            <div class="product" data-product="airmax" data-price="2500" data-image="imagens/air2.jpg">
-                <img class="imgprodoct" src="./imagens/air2.jpg" alt="olenka">
+            </div>
+            <div class="product" data-product="air" data-price="15000" data-image="imagens/air2.jpg">
+                <img class="imgprodoct" src="./imagens/air2.jpg" alt="">
                 <h5>airmax</h5>
-                <strong>12.500₣</strong>
+                <strong>15000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="camiseta" data-price="2500" data-image="imagens/camista2.jpg">
-                <img class="imgprodoct" src="./imagens/camista2.jpg" alt="olenka">
-                <h5>camiseta</h5>
-                <strong>2.500₣</strong>
+            </div>
+            <div class="product" data-product="saia" data-price="3500" data-image="imagens/saia2.jpg">
+                <img class="imgprodoct" src="./imagens/saia2.jpg" alt="">
+                <h5>saia</h5>
+                <strong>3500₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="cap" data-price="2000" data-image="imagens/cap2.jpg">
-                <img class="imgprodoct" src="./imagens/cap2.jpg" alt="olenka">
-                <h5>cap</h5>
-                <strong>2.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="airmax" data-price="5000" data-image="imagens/air3.jpg">
-                <img class="imgprodoct" src="./imagens/air3.jpg" alt="olenka">
-                <h5>airmax</h5>
-                <strong>5.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="cap" data-price="3000" data-image="imagens/tutifruit.jpg">
-                <img class="imgprodoct" src="./imagens/vestido tutifruit.jpg" alt="olenka">
-                <h5>tutifruit</h5>
-                <strong>3.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-           
-            <div class="product" data-product="salto" data-price="2000" data-image="imagens/salto preto1.jpg">
-                <img class="imgprodoct" src="./imagens/salto preto1.jpg" alt="olenka">
-                <h5>salto</h5>
-                <strong>2.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-           
-            <div class="product" data-product="calsa" data-price="2000" data-image="imagens/calsa2.jpg">
-                <img class="imgprodoct" src="./imagens/calsa2.jpg" alt="olenka">
-                <h5>calsa</h5>
-                <strong>2.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="relogio" data-price="12000" data-image="imagens/relogio2.jpg">
-                <img class="imgprodoct" src="./imagens/relogio2.jpg" alt="olenka">
-                <h5>relogio</h5>
-                <strong>12.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="cap" data-price="2000" data-image="imagens/jaket.jpg">
-                <img class="imgprodoct" src="./imagens/jaket.jpg" alt="olenka">
+            </div>
+            <div class="product" data-product="jaket" data-price="2500" data-image="imagens/jaket.jpg">
+                <img class="imgprodoct" src="./imagens/jaket1.jpg" alt="">
                 <h5>jaket</h5>
-                <strong>2.000₣</strong>
+                <strong>2500₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="sandalia" data-price="2000" data-image="imagens/sandalia2.jpg">
-                <img class="imgprodoct" src="./imagens/sandalia2.jpg" alt="sandalia">
-                <h5>sandalia</h5>
-                <strong>2.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-           
-            <div class="product" data-product="airmax" data-price="7000" data-image="imagens/air4.jpg">
-                <img class="imgprodoct" src="./imagens/air4.jpg" alt="sandalia">
-                <h5>airmax</h5>
-                <strong>7.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-           
-            <div class="product" data-product="saia3" data-price="4000" data-image="imagens/saia3.jpg">
-                <img class="imgprodoct" src="./imagens/saia3.jpg" alt="sandalia">
-                <h5>confidence</h5>
-                <strong>4.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="saltopreto" data-price="3000" data-image="imagens/salto preto1.jpg">
-                <img class="imgprodoct" src="./imagens/salto preto.jpg" alt="salto">
-                <h5>salto</h5>
-                <strong>3.000₣</strong>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="cap" data-price="1000" data-image="imagens/cap3.jpg">
-                <img class="imgprodoct" src="./imagens/cap3.jpg" alt="salto">
+            </div>
+            <div class="product" data-product="cap" data-price="2000" data-image="imagens/cap1.jpg">
+                <img class="imgprodoct" src="./imagens/cap1.jpg" alt="">
                 <h5>cap</h5>
-                <strong>1.000₣</strong>
+                <strong>2000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="crem1" data-price="9000" data-image="imagens/crem1.jpg">
-                <img class="imgprodoct" src="./imagens/crem1.jpg" alt="salto">
-                <h5>Niveau</h5>
-                <strong>900₣</strong>
+            </div>
+            <div class="product" data-product="nivea" data-price="1700" data-image="imagens/crem1.jpg">
+                <img class="imgprodoct" src="./imagens/crem1.jpg" alt="">
+                <h5>nivea</h5>
+                <strong>1700₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-           
-            <div class="product" data-product="crem2" data-price="1000" data-image="imagens/crem2.jpg">
-                <img class="imgprodoct" src="./imagens/crem2.jpg" alt="salto">
-                <h5>bodyeard</h5>
+            </div>
+            <div class="product" data-product="conjunto crepe" data-price="2000" data-image="imagens/conjunto crepe.jpg">
+                <img class="imgprodoct" src="./imagens/conjunto crepe.jpg" alt="">
+                <h5>conjunto crepe</h5>
+                <strong>2000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="relogio" data-price="12000" data-image="imagens/relogio2.jpg">
+                <img class="imgprodoct" src="./imagens/relogio2.jpg" alt="">
+                <h5>relogio</h5>
+                <strong>12000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="camiseta" data-price="1000" data-image="imagens/camiseta1.jpg">
+                <img class="imgprodoct" src="./imagens/camiseta1.jpg" alt="">
+                <h5>camiseta</h5>
                 <strong>1000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="sai" data-price="2000" data-image="imagens/saia2.jpg">
-                <img class="imgprodoct" src="./imagens/saia2.jpg" alt="salto">
-                <h5>beauty</h5>
-                <strong>1.700₣</strong>
+            </div>
+            <div class="product" data-product="air" data-price="12000" data-image="imagens/air3.jpg">
+                <img class="imgprodoct" src="./imagens/air3.jpg" alt="">
+                <h5>air</h5>
+                <strong>12000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="claeir" data-price="700" data-image="imagens/crem3.jpg">
-                <img class="imgprodoct" src="./imagens/crem3.jpg" alt="salto">
-                <h5>superclaeir</h5>
-                <strong>700₣</strong>
+            </div>
+            <div class="product" data-product="salto" data-price="4000" data-image="imagens/salto preto.jpg">
+                <img class="imgprodoct" src="./imagens/salto preto.jpg" alt="">
+                <h5>salto</h5>
+                <strong>4000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="camiseta" data-price="13000" data-image="imagens/camiseta3.jpg">
-                <img class="imgprodoct" src="./imagens/camiseta3.jpg" alt="salto">
-                <h5>newstile</h5>
-                <strong>1.300₣</strong>
+            </div>
+            <div class="product" data-product="calsa" data-price="4000" data-image="imagens/calsa2.jpg">
+                <img class="imgprodoct" src="./imagens/calsa2.jpg" alt="">
+                <h5>calsa</h5>
+                <strong>4000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
-            <div class="product" data-product="camiseta" data-price="500" data-image="imagens/cap4.jpg">
-                <img class="imgprodoct" src="./imagens/cap4.jpg" alt="salto">
+            </div>
+            <div class="product" data-product="crem" data-price="800" data-image="imagens/crem2.jpg">
+                <img class="imgprodoct" src="./imagens/crem2.jpg" alt="">
+                <h5>crem</h5>
+                <strong>800₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="camiseta" data-price="1500" data-image="imagens/camiseta3.jpg">
+                <img class="imgprodoct" src="./imagens/camiseta3.jpg" alt="">
+                <h5>camiseta3</h5>
+                <strong>1500₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="cos glos" data-price="1000" data-image="imagens/cos glos.jpg">
+                <img class="imgprodoct" src="./imagens/cos glos.jpg" alt="">
+                <h5>cos glos</h5>
+                <strong>1000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="salto" data-price="4500" data-image="imagens/salto castanho1.jpg">
+                <img class="imgprodoct" src="./imagens/salto castanho1.jpg" alt="">
+                <h5>salto</h5>
+                <strong>4500₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="air" data-price="9000" data-image="imagens/air4.jpg">
+                <img class="imgprodoct" src="./imagens/air4.jpg" alt="">
+                <h5>air</h5>
+                <strong>9000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="calsa" data-price="6000" data-image="imagens/calsa3.jpg">
+                <img class="imgprodoct" src="./imagens/calsa3.jpg" alt="">
+                <h5>calsa</h5>
+                <strong>6000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="cap" data-price="2000" data-image="imagens/cap2.jpg">
+                <img class="imgprodoct" src="./imagens/cap2.jpg" alt="">
+                <h5>cap</h5>
+                <strong>2000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="super clear" data-price="6000" data-image="imagens/crem3.jpg">
+                <img class="imgprodoct" src="./imagens/crem3.jpg" alt="">
+                <h5>super clear</h5>
+                <strong>600₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="sandalia" data-price="4000" data-image="imagens/sandalia2.jpg">
+                <img class="imgprodoct" src="./imagens/sandalia2.jpg" alt="">
+                <h5>sandalia</h5>
+                <strong>4000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="camista" data-price="5000" data-image="imagens/camista2.jpg">
+                <img class="imgprodoct" src="./imagens/camista2.jpg" alt="">
+                <h5>camista</h5>
+                <strong>5000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="mohda" data-price="1100" data-image="imagens/crem4.jpg">
+                <img class="imgprodoct" src="./imagens/crem4.jpg" alt="">
+                <h5>mohda</h5>
+                <strong>1100₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="saia" data-price="3500" data-image="imagens/saia3.jpg">
+                <img class="imgprodoct" src="./imagens/saia3.jpg" alt="">
+                <h5>saia</h5>
+                <strong>3500₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="fixsport" data-price="7500" data-image="imagens/sapato1.jpg">
+                <img class="imgprodoct" src="./imagens/sapato1.jpg" alt="">
+                <h5>fixsport</h5>
+                <strong>7500₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="cap" data-price="500" data-image="imagens/cap4.jpg">
+                <img class="imgprodoct" src="./imagens/cap4.jpg" alt="">
                 <h5>cap</h5>
                 <strong>500₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div> 
+            </div>
+            <div class="product" data-product="royal look" data-price="2000" data-image="imagens/cos olenka.jpg">
+                <img class="imgprodoct" src="./imagens/cos olenka.jpg" alt="">
+                <h5>royal look</h5>
+                <strong>2000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="salto" data-price="10000" data-image="imagens/salto1.jpg">
+                <img class="imgprodoct" src="./imagens/salto1.jpg" alt="">
+                <h5>salto</h5>
+                <strong>10000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="izas" data-price="1500" data-image="imagens/izas.jpg">
+                <img class="imgprodoct" src="./imagens/izas.jpg" alt="">
+                <h5>izas</h5>
+                <strong>1500₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="dior" data-price="7000" data-image="imagens/dior.webp.jpg">
+                <img class="imgprodoct" src="./imagens/dior.webp" alt="">
+                <h5>dior</h5>
+                <strong>7000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-product="urbana escolar" data-price="3000" data-image="imagens/urbana escolar.jpg">
+                <img class="imgprodoct" src="./imagens/urbana escolar.jpg" alt="">
+                <h5>urbana escolar</h5>
+                <strong>3000₣</strong>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione outros produtos aqui -->
            
             
-                    
-              
+            <!-- Modal -->
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
             
-        </div>
-        <div>
-            <h2 class="informacao"> suka kontra pruduto kuna buska bu pudi contatano pa numero  baixo</h2>
         </div>
 
         <div id="cart" style="display:none;">
@@ -275,21 +302,32 @@
                 <p>Código de Confirmação: <span id="orderCode"></span></p>
             </div>
         </div>
+  <!-- Painel do Vendedor -->
+<div id="sellerPanel" style="display:none;">
+    <h2>Painel do Vendedor</h2>
+    <h3>Informações do Último Pedido</h3>
+    <p>Nome: <span id="lastCustomerName"></span></p>
+    <p>Número: <span id="lastCustomerNumber"></span></p>
+    <p>Produtos Comprados: <span id="lastPurchasedProducts"></span></p>
+    <p>Código de Confirmação: <span id="lastOrderCode"></span></p>
+    <ul id="orderList"></ul>
+    <button id="removeOrderButton">Remover Pedido</button>
+</div>
+
+
+
         <div class="contatos">
             <div class="gerenciador">
                 <h3>gerenciador</h3>
                 <h3>+79774042572</h3>
-                
             </div>
             <div class="coloborador">
                 <h3>impressa bissau car <br>nunde ku pudi kumpra caro mais brato</h3>
                 <img class="coloborador" src="./imagens/ama.jpg" alt="">
-        
             </div>
         </div>
     </div>
   
-    
     <script src="index.js"></script>
 </body>
 </html>
