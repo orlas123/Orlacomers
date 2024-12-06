@@ -8,21 +8,7 @@ body {
     padding: 0;
     padding-top: 60px;
     background-color: rgb(250, 7, 7);
-    
 }
-id: css-content-stability
-name: CSS para Estabilidade do Conteúdo
-type: css
-content: |-
-  body {
-    overflow-x: hidden;
-    touch-action: manipulation;
-  }
-
-  .content {
-    position: relative;
-    will-change: transform;
-  }
 
 /* Container de Login */
 #loginContainer {
@@ -45,13 +31,12 @@ content: |-
 /* Dados de Perfil */
 #storeContainer {
     margin-left: 2rem;
-    color: white;
-   
+    color: white;   
 }
-#profile{
+
+#profile {
     width: 100%;
-    height: 350px;
-    
+    height: 350px;    
 }
 
 #nome, #numero {
@@ -73,10 +58,15 @@ content: |-
 }
 
 #orderCode {
-    color: white;
+    color: #218838;
     font-size: 14px;
     background-color: black;
 }
+.log{
+    width: 60px ;
+    border-radius: 30px;
+}
+
 
 nav {
     position: fixed;
@@ -98,8 +88,7 @@ nav ul {
 nav ul li {
     text-align: center;
     flex: 1;
-    max-width: 1340px;
-   
+     
 }
 
 nav ul li a {
@@ -108,7 +97,9 @@ nav ul li a {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-   width: 100%;
+    width: 100%;
+    margin-left: 6rem;
+   
 }
 
 #cart {
@@ -116,45 +107,40 @@ nav ul li a {
     max-width: 1340px; /* Se necessário, mantenha um max-width */
     border: 2px solid;
     margin: 0 auto; /* Centraliza */
-    height: 560px;
- 
-   
-    
+    height: 560px; 
 }
 
 #cartCount {
     position: fixed;
     top: 20px;
-    left: 60px;
+    left: 400px;
     right: 0px;
     font-size: larger;
 }
 
 #cartItems {
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   gap: 10px;
-    list-style: none;
-   
-   
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;   
 }     
-#checkoutButton{
-    color:  black;
+
+#checkoutButton {
+    color: black;
     background-color: white;
     border: 2px black;
     margin-left: 3rem;
 }
-#checkoutButton:hover{
-   background-color: #218838;
 
+#checkoutButton:hover {
+    background-color: #218838;
 }
-#orderCode{
+
+#orderCode {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     font-weight: bolder;
-    background-color: black;
-   
+    background-color: red;   
 }
 
 i {
@@ -177,36 +163,35 @@ button:hover {
 /* Container de Produtos */
 #products {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Responsivo */
+    grid-template-columns: repeat(4, 1fr); /* Responsivo */
     gap: 5px;
     justify-content: center;
-    padding: 8px;
+    padding: 10px;
     width: 100%;
 }
-.quantity-controls{
-   width: 136px;
-   border: 2px solid white;
-   display: flex;
-   margin-bottom: 4px;
-   font-size: 14px;
-   padding: 0px;
-  
-   
+
+.quantity-controls {
+    width: 136px;
+    border: 2px solid white;
+    display: flex;
+    margin-bottom: 4px;
+    font-size: 14px;
+    padding: 0px;  
 }
-.remove{
-    width: 10px;
-   
+
+.remove {
+    width: 10px;   
 }
-.decrase{
+
+.decrase {
     width: 10px;
     font-size: 8px;
 }
-.incrase{
+
+.incrase {
     width: 10px;
     font-size: small;
 }
-
-
 
 .product {
     background-color: white;
@@ -216,17 +201,17 @@ button:hover {
     text-align: center;
     color: black;
     border-radius: 2px;
-    width: 250px;
+    width: 300px;
    
-
+   
 }
 
 .imgprodoct {
-     /* Ocupa toda a largura do container */
     height: 100%; /* Mantém a proporção */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
     border-radius: 2px;
     width: 100%;
+    height: 310px;
 }
 
 .contatos {
@@ -245,33 +230,95 @@ button:hover {
     border: 2px solid white;
     margin-top: 2rem;
 }
-.coloborador{
+
+.coloborador {
     width: 300px;
     height: 200px;
-   margin-right: 5rem;
-   display: flex;
-   padding: 8px;
-   font-size: small;
+    margin-right: 5rem;
+    display: flex;
+    padding: 8px;
+    font-size: small;
 }
+
+
+
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fica em cima da página */
+    z-index: 1000; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    background-color: black;
+}
+
+/* Estilo da imagem do modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%; /* Largura da imagem */
+    max-width: 500px; /* Largura máxima da imagem */
+}
+
+/* Estilo do botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 /* Media Queries para Responsividade */
-@media (max-width: 560px) {
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+        margin-top: 1rem;
+    }
+
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* Três colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
     }
-}
 
-
-
-
-@media (max-width: 560px) {
-    body {
-         background-color: rgb(250, 7, 7);
-        font-size:14px
+    #loginContainer {
+        width: 90%; /* Aumenta a largura em telas menores */
     }
 }
-@media (max-width: 560px) {
-    .containerPrincipal{
-        width:100%
-        
+
+@media (max-width: 480px) {
+    #products {
+        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+        margin-top: 1rem;
+    }
+
+    #cart {
+        height: auto; /* Ajusta a altura do carrinho */
+    }
+
+    .coloborador {
+        width: 100%; /* Ajusta a largura do colaborador */
+        margin-right: 0; /* Remove a margem */
+    }
+
+    #checkoutButton {
+        margin-left: 0; /* Remove a margem em telas pequenas */
     }
 }
