@@ -41,7 +41,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
                 <button class="decrease">➖</button>
                 <span class="quantity">1</span>
                 <button class="increase">➕</button>
-                <button class="remove">🗑️</button> <!-- Botão de remover -->
+                <button class="remove">🗑️</button>
             </div>`;
         
         cartItemsList.appendChild(listItem);
@@ -49,7 +49,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         const decreaseButton = listItem.querySelector('.decrease');
         const increaseButton = listItem.querySelector('.increase');
         const quantitySpan = listItem.querySelector('.quantity');
-        const removeButton = listItem.querySelector('.remove'); // Botão de remover
+        const removeButton = listItem.querySelector('.remove');
 
         decreaseButton.addEventListener('click', () => {
             let quantity = parseInt(quantitySpan.textContent);
@@ -68,10 +68,10 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         });
 
         removeButton.addEventListener('click', () => {
-            cartItemsList.removeChild(listItem); // Remove o item da lista
+            cartItemsList.removeChild(listItem);
             cartCount--;
             cartCountSpan.textContent = cartCount;
-            updateTotal(); // Atualiza o total
+            updateTotal();
         });
 
         totalAmount += price;
@@ -97,25 +97,55 @@ document.getElementById('checkoutButton').addEventListener('click', () => {
         return;
     }
 
+    // Gerar código de pedido
     const orderCode = Math.floor(Math.random() * 10000);
     orderCodeSpan.textContent = orderCode;
     document.getElementById('orderConfirmation').style.display = 'block';
 
+   // Armazenar informações do último pedido
+   const lastCustomerData = {
+    nome: profileNameSpan.textContent,
+    numero: profileNumberSpan.textContent,
+    produtos: Array.from(cartItemsList.children).map(item => {
+        const productName = item.innerText.split('-')[0].trim();
+        const productImage = item.querySelector('img').src; // Captura a imagem
+        return { name: productName, image: productImage };
+    }),
+    orderCode: orderCode
+};
+
+// Atualizar painel do vendedor
+document.getElementById('lastCustomerName').innerText = lastCustomerData.nome;
+document.getElementById('lastCustomerNumber').innerText = lastCustomerData.numero;
+const lastPurchasedProducts = document.getElementById('lastPurchasedProducts');
+lastPurchasedProducts.innerHTML = ''; // Limpa produtos anteriores
+lastCustomerData.produtos.forEach(product => {
+    const productItem = document.createElement('div');
+    productItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;">
+        ${product.name}`;
+    lastPurchasedProducts.appendChild(productItem);
+});
+document.getElementById('lastOrderCode').innerText = lastCustomerData.orderCode;
+
+
+    // Limpar o carrinho
     cartItemsList.innerHTML = '';
     totalAmount = 0;
     cartCount = 0;
     totalAmountSpan.textContent = '0.00';
     cartCountSpan.textContent = '0';
-    document.getElementById('products').style.display = 'grid'; // Mantenha o estilo grid
+    document.getElementById('products').style.display = 'grid';
     document.getElementById('cart').style.display = 'none';
     document.getElementById('profile').style.display = 'none';
 });
 
 // Função para mostrar a seção de produtos
 function showProducts() {
-    document.getElementById('products').style.display = 'grid'; // Mantenha o estilo grid
+    document.getElementById('products').style.display = 'grid';
     document.getElementById('cart').style.display = 'none';
     document.getElementById('profile').style.display = 'none';
+    document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
 }
 
 // Eventos para mostrar as seções
@@ -124,6 +154,7 @@ document.getElementById('cartLink').addEventListener('click', (event) => {
     document.getElementById('cart').style.display = 'block';
     document.getElementById('profile').style.display = 'none';
     document.getElementById('products').style.display = 'none';
+    document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
 });
 
 document.getElementById('profileLink').addEventListener('click', (event) => {
@@ -131,10 +162,85 @@ document.getElementById('profileLink').addEventListener('click', (event) => {
     document.getElementById('profile').style.display = 'block';
     document.getElementById('cart').style.display = 'none';
     document.getElementById('products').style.display = 'none';
+    document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
 });
 
-// Evento para mostrar a seção de produtos
+// Evento para mostrar a seção do painel do vendedor
+document.getElementById('sellerPanelLink').addEventListener('click', (event) => {
+    event.preventDefault();
+    // Ocultar todas as seções
+    document.getElementById('cart').style.display = 'none';
+    document.getElementById('profile').style.display = 'none';
+    document.getElementById('products').style.display = 'none';
+    document.getElementById('sellerPanel').style.display = 'block'; // Mostrar o painel do vendedor
+});
+
+// Evento para voltar ao painel principal
 document.getElementById('homeLink').addEventListener('click', (event) => {
     event.preventDefault();
     showProducts();
 });
+
+// Seleciona o modal e o botão de fechar
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const captionText = document.getElementById("caption");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+// Adicionando evento de clique nas imagens
+document.querySelectorAll('.product img').forEach((img) => {
+    img.addEventListener('click', function() {
+        modal.style.display = "block"; // Mostra o modal
+        modalImage.src = this.src; // Define a imagem no modal
+        captionText.innerHTML = this.alt; // Define a legenda no modal
+    });
+});
+
+// Evento para fechar o modal ao clicar no botão de fechar
+closeBtn.onclick = function() {
+    modal.style.display = "none"; // Oculta o modal
+}
+
+// Fecha o modal quando clicar fora da imagem
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none"; // Oculta o modal
+    }
+}
+
+// Registro do Service Worker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+            console.log('Service Worker registrado com sucesso:', registration);
+        }).catch((error) => {
+            console.log('Falha ao registrar o Service Worker:', error);
+        });
+    });
+
+    // Lógica para instalação
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        
+        // Criar um botão de instalação
+        const installButton = document.createElement('button');
+        installButton.textContent = 'Instalar App';
+        document.body.appendChild(installButton);
+
+        installButton.addEventListener('click', () => {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('Usuário aceitou a instalação');
+                } else {
+                    console.log('Usuário rejeitou a instalação');
+                }
+                deferredPrompt = null;
+            });
+        });
+    });
+}
+
+
