@@ -158,7 +158,7 @@ button:hover {
 /* Container de Produtos */
 #products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsivo */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas por padrão */
     gap: 5px;
     justify-content: center;
     padding: 10px;
@@ -251,18 +251,17 @@ button:hover {
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
-    color:red,
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 1000px) {
     nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
+        flex-direction: row; /* Alinha os itens horizontalmente */
         margin-top: 1rem;
     }
 
     #products {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas pequenas */
     }
 }
 
@@ -274,16 +273,11 @@ button:hover {
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
-    }
-@media (max-width: 480px) {
-    .imgprodoct {
-        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
-        width:110px,
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas pequenas */
     }
 
     nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
+        flex-direction: row; /* Mantém os itens alinhados horizontalmente */
         margin-top: 1rem;
     }
 
