@@ -280,12 +280,14 @@ button:hover {
 /* Media Queries para Responsividade */
 @media (max-width: 1024px) {
     nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
+        flex-direction: row; /* Coloca os itens em coluna */
         margin-top: 1rem;
+        font-size: 24px;
     }
 
     #products {
         grid-template-columns: repeat(2, 1fr); /* Três colunas em telas médias */
+        overflow: hidden;
     }
 }
 
@@ -301,7 +303,7 @@ button:hover {
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 2fr; /* Uma coluna em telas pequenas */
+        grid-template-columns:(2,1fr); /* Uma coluna em telas pequenas */
     }
 
     nav ul {
