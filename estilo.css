@@ -245,7 +245,7 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    background-color: black;
 }
 
 /* Estilo da imagem do modal */
@@ -261,7 +261,7 @@ button:hover {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: white;
+    color: red;
     font-size: 35px;
     font-weight: bold;
 }
@@ -277,7 +277,7 @@ button:hover {
 
     nav ul {
         flex-direction: row; /* Coloca os itens em coluna */
-         font-sizes:17px,
+         font-sizes:14px,
     }
 }
 
@@ -305,7 +305,7 @@ button:hover {
 
 @media (max-width: 600px) {
     #products {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        grid-template-columns:(2, 1fr); /* Uma coluna em telas pequenas */
     }
 
     #nome, #numero {
