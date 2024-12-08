@@ -273,7 +273,7 @@ body {
 }
 
 /* Ajustes para telas menores, como smartphones */
-@media (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 500px) {
     body {
         font-size: 14px; /* Reduz o tamanho da fonte para telas pequenas */
     }
