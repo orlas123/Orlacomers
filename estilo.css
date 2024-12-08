@@ -281,12 +281,13 @@ button:hover {
     }
 }
 
-@media (max-width: 600px) {  
+@media (max-width: 550px) {  
           body {
         font-size: 14px; /* Reduz o tamanho da fonte */
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+        aling-items: center;
     }
 
     #loginContainer {
@@ -313,7 +314,7 @@ button:hover {
     }
 
     #cartCount {
-        left: 20px; /* Ajusta a posição do contador do carrinho */
+        left: 40px; /* Ajusta a posição do contador do carrinho */
     }
 
     .coloborador {
