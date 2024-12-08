@@ -268,16 +268,23 @@ button:hover {
 
 /* Media Queries para Responsividade */
 @media (max-width: 1200px) {
+    body{
+        font-sizes:17px
+    }
     #products {
-        grid-template-columns: repeat(3, 1fr); /* Três colunas em telas grandes */
+        grid-template-columns: repeat(2, 1fr); /* Três colunas em telas grandes */
     }
 
     nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
+        flex-direction: row; /* Coloca os itens em coluna */
+         font-sizes:17px,
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) {  
+          body {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
     }
@@ -287,7 +294,7 @@ button:hover {
     }
 
     nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
+        flex-direction: row; /* Coloca os itens em coluna */
         margin-top: 1rem; /* Ajusta a margem */
     }
 
