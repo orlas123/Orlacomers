@@ -278,9 +278,9 @@ button:hover {
 
 
 /* Media Queries para Responsividade */
-@media (max-width: 1024px) {
+@media (max-width: 990px) {
     nav ul {
-        flex-direction: row; /* Coloca os itens em coluna */
+        flex-direction: colum; /* Coloca os itens em coluna */
         margin-top: 1rem;
         font-size: 24px;
     }
