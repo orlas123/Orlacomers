@@ -62,11 +62,11 @@ body {
     font-size: 14px;
     background-color: black;
 }
-.log{
-    width: 60px ;
+
+.log {
+    width: 60px;
     border-radius: 30px;
 }
-
 
 nav {
     position: fixed;
@@ -88,7 +88,6 @@ nav ul {
 nav ul li {
     text-align: center;
     flex: 1;
-     
 }
 
 nav ul li a {
@@ -99,7 +98,6 @@ nav ul li a {
     align-items: center; 
     width: 100%;
     margin-left: 6rem;
-   
 }
 
 #cart {
@@ -202,8 +200,6 @@ button:hover {
     color: black;
     border-radius: 2px;
     width: 300px;
-   
-   
 }
 
 .imgprodoct {
@@ -240,9 +236,6 @@ button:hover {
     font-size: small;
 }
 
-
-
-
 /* Estilo do modal */
 .modal {
     display: none; /* Oculto por padrão */
@@ -252,9 +245,7 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
-    height: 900px;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
-    background-color: black;
 }
 
 /* Estilo da imagem do modal */
@@ -273,7 +264,71 @@ button:hover {
     color: white;
     font-size: 35px;
     font-weight: bold;
-    cursor: pointer;
 }
 
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    #products {
+        grid-template-columns: repeat(3, 1fr); /* Três colunas em telas grandes */
+    }
 
+    nav ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+    }
+}
+
+@media (max-width: 900px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+    }
+
+    #loginContainer {
+        max-width: 90%; /* Aumenta a largura em telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens em coluna */
+        margin-top: 1rem; /* Ajusta a margem */
+    }
+
+    nav ul li a {
+        margin-left: 0; /* Remove margem lateral */
+    }
+}
+
+@media (max-width: 600px) {
+    #products {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+
+    #nome, #numero {
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    #cartCount {
+        left: 20px; /* Ajusta a posição do contador do carrinho */
+    }
+
+    .coloborador {
+        width: 100%; /* Ocupa toda a largura */
+        margin-right: 0; /* Remove margem */
+    }
+
+    button {
+        width: 100%; /* Botão ocupa toda a largura */
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+
+    #loginContainer {
+        padding: 20px; /* Reduz o padding */
+    }
+
+    .quantity-controls {
+        font-size: 12px; /* Reduz o tamanho da fonte dos controles */
+    }
+}
