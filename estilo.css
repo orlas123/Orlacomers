@@ -281,13 +281,14 @@ button:hover {
     }
 }
 
-@media (max-width: 550px) {  
+@media (max-width: 580px) {  
           body {
         font-size: 14px; /* Reduz o tamanho da fonte */
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
         aling-items: center;
+        width:400px;
     }
 
     #loginContainer {
