@@ -266,78 +266,31 @@ button:hover {
     font-weight: bold;
 }
 
-/* Media Queries para Responsividade */
-@media (max-width: 1200px) {
-    body{
-        font-sizes:17px
-    }
-    #products {
-        grid-template-columns: repeat(2, 1fr); /* Três colunas em telas grandes */
-    }
-
-    nav ul {
-        flex-direction: row; /* Coloca os itens em coluna */
-         font-sizes:14px,
-    }
+/* Estilos gerais */
+body {
+    font-size: 16px; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
 }
 
-@media (max-width: 600px) {  
-          body {
-        font-size: 24px; /* Reduz o tamanho da fonte */
-    }
-    #products {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
-        aling-items: center;
-       max-width:400px;
-    }
-
-    #loginContainer {
-        max-width: 90%; /* Aumenta a largura em telas menores */
-    }
-
-    nav ul {
-        flex-direction: row; /* Coloca os itens em coluna */
-        margin-top: 1rem; /* Ajusta a margem */
-    }
-
-    nav ul li a {
-        margin-left: 0; /* Remove margem lateral */
-    }
-}
-
+/* Ajustes para telas menores, como smartphones */
 @media (max-width: 600px) {
-    #products {
-        grid-template-columns:(2, 1fr); /* Uma coluna em telas pequenas */
+    body {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas pequenas */
+    }
+    
+   .imgprodoct {
+        max-width: 100%; /* Imagens responsivas, ocupando no máximo 100% da largura */
+        height: auto; /* Mantém a proporção da imagem */
     }
 
-    #nome, #numero {
-        width: 100%; /* Ocupa toda a largura */
-    }
-
-    #cartCount {
-        left: 40px; /* Ajusta a posição do contador do carrinho */
-    }
-
-    .coloborador {
-        width: 100%; /* Ocupa toda a largura */
-        margin-right: 0; /* Remove margem */
-    }
-
-    button {
-        width: 100%; /* Botão ocupa toda a largura */
+    .container {
+        padding: 10px; /* Ajusta o espaçamento interno do container */
     }
 }
 
-@media (max-width: 400px) {
+/* Para tablets, por exemplo */
+@media (min-width: 601px) and (max-width: 900px) {
     body {
-        font-size: 14px; /* Reduz o tamanho da fonte */
-    }
-
-    #loginContainer {
-        padding: 20px; /* Reduz o padding */
-    }
-
-    .quantity-controls {
-        font-size: 12px; /* Reduz o tamanho da fonte dos controles */
+        font-size: 15px; /* Tamanho de fonte intermediário para tablets */
     }
 }
