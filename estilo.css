@@ -281,9 +281,9 @@ button:hover {
     }
 }
 
-@media (max-width: 590px) {  
+@media (max-width: 600px) {  
           body {
-        font-size: 17px; /* Reduz o tamanho da fonte */
+        font-size: 24px; /* Reduz o tamanho da fonte */
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
