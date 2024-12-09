@@ -8,7 +8,6 @@ body {
     padding: 0;
     padding-top: 60px;
     background-color: rgb(250, 7, 7);
-    overflow-x: hidden; /* Impede o zoom horizontal */
 }
 
 /* Container de Login */
@@ -84,6 +83,7 @@ nav ul {
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 2rem;
+    padding: 0; /* Remove padding para melhor alinhamento */
 }
 
 nav ul li {
@@ -98,9 +98,9 @@ nav ul li a {
     flex-direction: column; 
     align-items: center; 
     width: 100%;
-    margin-left: 6rem;
 }
 
+/* Estilos do Carrinho */
 #cart {
     width: 100%; /* Ocupar 100% da largura */
     max-width: 1340px; /* Se necessário, mantenha um max-width */
@@ -178,20 +178,6 @@ button:hover {
     padding: 0px;  
 }
 
-.remove {
-    width: 10px;   
-}
-
-.decrase {
-    width: 10px;
-    font-size: 8px;
-}
-
-.incrase {
-    width: 10px;
-    font-size: small;
-}
-
 .product {
     background-color: white;
     display: flex;
@@ -237,42 +223,12 @@ button:hover {
     font-size: small;
 }
 
-/* Estilo do modal */
-.modal {
-    display: none; /* Oculto por padrão */
-    position: fixed; /* Fica em cima da página */
-    z-index: 1000; /* Fica acima de outros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-   background-color: black;
-}
-
-/* Estilo da imagem do modal */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 100%; /* Largura da imagem */
-    max-width: 500px; /* Largura máxima da imagem */
-}
-
-/* Estilo do botão de fechar */
-.close {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: red;
-    font-size: 35px;
-    font-weight: bold;
-}
-
 /* Media Queries para Responsividade */
 @media (max-width: 990px) {
     nav ul {
-        flex-direction: row; /* Coloca os itens em coluna */
+        flex-direction: row; /* Mantém os itens em linha horizontal */
         margin-top: 1rem;
-        font-size: 20px; /* Reduzir o tamanho da fonte */
+        font-size: 20px;
     }
 
     #products {
@@ -281,8 +237,12 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Mantém os itens em linha horizontal */
+    }
+
     #products {
-        grid-template-columns: repeat(2, 1fr); /* Uma coluna em telas menores */
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
     }
 
     #loginContainer {
@@ -291,10 +251,12 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+    #products {
+        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+
     nav ul {
-        flex-direction: row; /* Coloca os itens em coluna */
-        font-size:14
-        margin-top: 1rem;
+        flex-direction: row; /* Mantém os itens em linha horizontal */
     }
 
     #cart {
