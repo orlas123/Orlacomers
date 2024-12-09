@@ -8,6 +8,7 @@ body {
     padding: 0;
     padding-top: 60px;
     background-color: rgb(250, 7, 7);
+    overflow-x: hidden; /* Impede o zoom horizontal */
 }
 
 /* Container de Login */
@@ -245,7 +246,6 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
-    background-color: black;
 }
 
 /* Estilo da imagem do modal */
@@ -266,31 +266,55 @@ button:hover {
     font-weight: bold;
 }
 
-/* Estilos gerais */
-body {
-    font-size: 16px; /* Tamanho da fonte padrão */
-    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+/* Media Queries para Responsividade */
+
+/* Ajustes para telas pequenas (smartphones) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Remove a margem lateral */
+        margin: 10px; /* Espaço entre os itens */
+    }
+
+    #products {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para smartphones */
+    }
+
+    #loginContainer {
+        width: 90%; /* Largura do container de login */
+    }
+
+    #cartCount {
+        left: 20px; /* Ajusta a posição do contador do carrinho */
+    }
 }
 
-/* Ajustes para telas menores, como smartphones */
-@media (min-width: 500px) and (max-width: 500px) {
-    body {
-        font-size: 14px; /* Reduz o tamanho da fonte para telas pequenas */
-    }
-    
-   .imgprodoct {
-        max-width: 100%; /* Imagens responsivas, ocupando no máximo 100% da largura */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-
-    .container {
-        padding: 10px; /* Ajusta o espaçamento interno do container */
-    }
-}
-
-/* Para tablets, por exemplo */
+/* Ajustes para tablets */
 @media (min-width: 601px) and (max-width: 900px) {
-    body {
-        font-size: 15px; /* Tamanho de fonte intermediário para tablets */
+    nav ul {
+        flex-direction: row; /* Mantém a direção do flex para linha */
+    }
+
+    #products {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas para tablets */
+    }
+
+    #loginContainer {
+        width: 80%; /* Largura do container de login */
+    }
+
+    #cartCount {
+        left: 300px; /* Ajusta a posição do contador do carrinho */
+    }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 901px) {
+    #products {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas grandes */
     }
 }
