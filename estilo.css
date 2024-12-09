@@ -263,6 +263,11 @@ button:hover {
         margin-top: 1rem;
         font-size: 18px;
     }
+    .containerPrincipal {
+    width: 100%;
+    max-width: 400px; /* Se necessário, mantenha um max-width */
+    margin: 0 auto; /* Centraliza */
+}
     nav {
         .containerPrincipal {
     width: 100%;
@@ -294,7 +299,7 @@ button:hover {
     }
     .containerPrincipal {
     width: 100%;
-    max-width: 400px; /* Se necessário, mantenha um max-width */
+    max-width: 300px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
 }
     .container {
