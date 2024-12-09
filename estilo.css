@@ -243,6 +243,8 @@ button:hover {
     text-align: center;
     border: 2px solid white;
     margin-top: 2rem;
+    width:100%
+    font-size:14px
 }
 
 .coloborador {
@@ -262,6 +264,11 @@ button:hover {
         font-size: 18px;
     }
     nav {
+        .containerPrincipal {
+    width: 100%;
+    max-width: 600px; /* Se necessário, mantenha um max-width */
+    margin: 0 auto; /* Centraliza */
+}
     position: fixed;
     button: 0;
     left: 0;
@@ -285,6 +292,11 @@ button:hover {
     bodu {
         font-size: 14
     }
+    .containerPrincipal {
+    width: 100%;
+    max-width: 400px; /* Se necessário, mantenha um max-width */
+    margin: 0 auto; /* Centraliza */
+}
     .container {
         pading:10px;
     }
@@ -321,6 +333,11 @@ button:hover {
         grid-template-columns:(2, 1fr); /* Uma coluna em telas pequenas */
           font-size: 20px;
     }
+    .containerPrincipal {
+    width: 100%;
+    max-width: 200px; /* Se necessário, mantenha um max-width */
+    margin: 0 auto; /* Centraliza */
+}
 
     nav ul {
         flex-direction: row; /* Mantém os itens em linha horizontal */
