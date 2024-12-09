@@ -268,104 +268,45 @@ button:hover {
 }
 
 /* Media Queries para Responsividade */
-
-/* Ajustes para telas pequenas (smartphones) */
-@media (max-width: 500px) {
-    body{
-        overflow-x: hidden; /* Impede o zoom horizontal */
-        marging:0;
-        width:480px;
-    }
-    nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 90%;
-    background-color: red;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 2rem;
-}
-
-nav ul li {
-    text-align: center;
-    flex: 1;
-}
-    nav ul li a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    width: 90%;
-   
-}
-
-    #products {
-       display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Responsivo */
-    gap: 5px;
-    justify-content: center;
-    padding: 10px;
-     max-width: 290px
-    width: 100%;
-        
-    }
-
-    .product {
-         background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2px;
-    text-align: center;
-    color: black;
-    border-radius: 2px;
-    width: 190px;
-    }
-   .imgprodoct {
-    height: 100%; /* Mantém a proporção */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
-    border-radius: 2px;
-    width: 100%;
-    height: 210px;
-}
-    #loginContainer {
-        width: 90%; /* Largura do container de login */
-    }
-
-    #cartCount {
-        left: 20px; /* Ajusta a posição do contador do carrinho */
-    }
-}
-
-/* Ajustes para tablets */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (max-width: 990px) {
     nav ul {
-        flex-direction: row; /* Mantém a direção do flex para linha */
+        flex-direction: row; /* Coloca os itens em coluna */
+        margin-top: 1rem;
+        font-size: 20px; /* Reduzir o tamanho da fonte */
     }
 
     #products {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas para tablets */
-    }
-
-    #loginContainer {
-        width: 80%; /* Largura do container de login */
-    }
-
-    #cartCount {
-        left: 300px; /* Ajusta a posição do contador do carrinho */
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
     }
 }
 
-/* Ajustes para telas grandes */
-@media (min-width: 901px) {
+@media (max-width: 768px) {
     #products {
-        grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas grandes */
+        grid-template-columns: repeat(2, 1fr); /* Uma coluna em telas menores */
+    }
+
+    #loginContainer {
+        width: 90%; /* Aumenta a largura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: row; /* Coloca os itens em coluna */
+        font-size:14
+        margin-top: 1rem;
+    }
+
+    #cart {
+        height: auto; /* Ajusta a altura do carrinho */
+    }
+
+    .coloborador {
+        width: 100%; /* Ajusta a largura do colaborador */
+        margin-right: 0; /* Remove a margem */
+    }
+
+    #checkoutButton {
+        margin-left: 0; /* Remove a margem em telas pequenas */
     }
 }
