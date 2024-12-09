@@ -196,6 +196,36 @@ button:hover {
     width: 100%;
     height: 310px;
 }
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fica em cima da página */
+    z-index: 1000; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    background-color: black;
+}
+
+/* Estilo da imagem do modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%; /* Largura da imagem */
+    max-width: 500px; /* Largura máxima da imagem */
+}
+/* Estilo do botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .contatos {
     width: 100%;
@@ -228,7 +258,7 @@ button:hover {
     nav ul {
         flex-direction: row; /* Mantém os itens em linha horizontal */
         margin-top: 1rem;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #products {
@@ -252,7 +282,8 @@ button:hover {
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        grid-template-columns:(2, 1fr); /* Uma coluna em telas pequenas */
+          font-size: 18px;
     }
 
     nav ul {
