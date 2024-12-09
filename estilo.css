@@ -271,17 +271,36 @@ button:hover {
 
 /* Ajustes para telas pequenas (smartphones) */
 @media (max-width: 500px) {
-    nav ul {
-       display: flex;
+    nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+nav ul li {
+    text-align: center;
+    flex: 1;
+}
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
     flex-direction: column; 
     align-items: center; 
     width: 100%;
-    }
-
-    nav ul li {
-        margin-left: 0; /* Remove a margem lateral */
-        margin: 10px; /* Espaço entre os itens */
-    }
+    margin-left: 6rem;
+}
 
     #products {
        display: grid;
@@ -289,7 +308,7 @@ button:hover {
     gap: 5px;
     justify-content: center;
     padding: 10px;
-     max-width: 490px
+     max-width: 290px
     width: 100%;
         
     }
@@ -302,7 +321,7 @@ button:hover {
     text-align: center;
     color: black;
     border-radius: 2px;
-    width: 200px;
+    width: 190px;
     }
    .imgprodoct {
     height: 100%; /* Mantém a proporção */
