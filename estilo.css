@@ -246,6 +246,7 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
+    backround-color:black;
 }
 
 /* Estilo da imagem do modal */
@@ -269,10 +270,12 @@ button:hover {
 /* Media Queries para Responsividade */
 
 /* Ajustes para telas pequenas (smartphones) */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     nav ul {
-        flex-direction: row; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens */
+       display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
     }
 
     nav ul li {
@@ -281,9 +284,33 @@ button:hover {
     }
 
     #products {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas para smartphones */
+       display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Responsivo */
+    gap: 5px;
+    justify-content: center;
+    padding: 10px;
+     max-width: 490px
+    width: 100%;
+        
     }
 
+    .product {
+         background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    text-align: center;
+    color: black;
+    border-radius: 2px;
+    width: 200px;
+    }
+   .imgprodoct {
+    height: 100%; /* Mantém a proporção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
+    border-radius: 2px;
+    width: 100%;
+    height: 210px;
+}
     #loginContainer {
         width: 90%; /* Largura do container de login */
     }
