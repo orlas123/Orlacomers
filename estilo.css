@@ -269,7 +269,7 @@ button:hover {
 }
     #cartCount {
     left: 200px;
-        top:2rem;
+        top:4rem;
    
 }
 
@@ -282,6 +282,12 @@ button:hover {
     }
     .imgprodoct {
         max-width:100%;
+    }
+    #cartCount {
+    left: 200px;
+            top:2rem;
+   
+}
     
     nav ul {
         flex-direction: row; /* Mantém os itens em linha horizontal */
