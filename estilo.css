@@ -261,6 +261,14 @@ button:hover {
         margin-top: 1rem;
         font-size: 18px;
     }
+    nav {
+    position: fixed;
+    button: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 1000;
+}
 
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
