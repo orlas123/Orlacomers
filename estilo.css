@@ -265,6 +265,10 @@ button:hover {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
     }
 }
+    #cartCount {
+    left: 200px;
+   
+}
 
 @media (max-width: 768px) {
     nav ul {
@@ -274,6 +278,10 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
     }
+        #cartCount {
+    left: 200px;
+   
+}
 
     #loginContainer {
         width: 90%; /* Aumenta a largura em telas menores */
@@ -293,6 +301,10 @@ button:hover {
     #cart {
         height: auto; /* Ajusta a altura do carrinho */
     }
+    #cartCount {
+    left: 200px;
+   
+}
 
     .coloborador {
         width: 100%; /* Ajusta a largura do colaborador */
