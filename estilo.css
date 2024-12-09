@@ -246,7 +246,7 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
-    backround-color:black;
+   background-color: black;
 }
 
 /* Estilo da imagem do modal */
@@ -272,7 +272,7 @@ button:hover {
 /* Ajustes para telas pequenas (smartphones) */
 @media (max-width: 500px) {
     body{
-        overflow:hidem;
+        overflow-x: hidden; /* Impede o zoom horizontal */
         marging:0;
         width:480px;
     }
@@ -280,7 +280,7 @@ button:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     background-color: red;
     z-index: 1000;
 }
@@ -303,7 +303,7 @@ nav ul li {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    width: 100%;
+    width: 90%;
    
 }
 
