@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+    marging:0;
+        padding:0;
 }
 
 body {
@@ -82,7 +84,7 @@ nav {
     background-color: red;
     z-index: 1000;
    padding:10px 0;
-    margin: 0 auto
+    
 }
 
 nav ul {
