@@ -62,11 +62,11 @@ body {
     font-size: 14px;
     background-color: black;
 }
-
-.log {
-    width: 60px;
+.log{
+    width: 60px ;
     border-radius: 30px;
 }
+
 
 nav {
     position: fixed;
@@ -88,6 +88,7 @@ nav ul {
 nav ul li {
     text-align: center;
     flex: 1;
+     
 }
 
 nav ul li a {
@@ -98,6 +99,7 @@ nav ul li a {
     align-items: center; 
     width: 100%;
     margin-left: 6rem;
+   
 }
 
 #cart {
@@ -177,6 +179,20 @@ button:hover {
     padding: 0px;  
 }
 
+.remove {
+    width: 10px;   
+}
+
+.decrase {
+    width: 10px;
+    font-size: 8px;
+}
+
+.incrase {
+    width: 10px;
+    font-size: small;
+}
+
 .product {
     background-color: white;
     display: flex;
@@ -185,7 +201,9 @@ button:hover {
     text-align: center;
     color: black;
     border-radius: 2px;
-    width: 300px;
+    width: 100%;
+   
+   
 }
 
 .imgprodoct {
@@ -222,6 +240,9 @@ button:hover {
     font-size: small;
 }
 
+
+
+
 /* Estilo do modal */
 .modal {
     display: none; /* Oculto por padrão */
@@ -233,6 +254,7 @@ button:hover {
     height: 100%; /* Altura total */
     height: 900px;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    background-color: black;
 }
 
 /* Estilo da imagem do modal */
@@ -254,76 +276,45 @@ button:hover {
     cursor: pointer;
 }
 
+
 /* Media Queries para Responsividade */
 @media (max-width: 990px) {
-    body {
-        padding-top: 40px; /* Reduz o padding superior */
-    }
-
-    #loginContainer {
-        max-width: 90%; /* Aumenta a largura em telas menores */
-    }
-
     nav ul {
-        flex-direction: row; /* Mantém os itens em linha horizontal */
+        flex-direction: row; /* Coloca os itens em coluna */
         margin-top: 1rem;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     #products {
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
-    }
-
-    #cart {
-        height: auto; /* Ajusta a altura do carrinho */
-    }
-
-    .coloborador {
-        width: 100%; /* Ajusta a largura do colaborador */
-        margin-right: 0; /* Remove a margem */
+        grid-template-columns: repeat(2, 1fr); /* Três colunas em telas médias */
+        overflow: hidden;
     }
 }
 
 @media (max-width: 768px) {
-    #loginContainer {
-        width: 90%; /* Aumenta a largura em telas menores */
-    }
-
-    nav ul {
-        flex-direction: row; /* Mantém os itens em linha horizontal */
-        margin-top: 1rem;
-    }
-
     #products {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas menores */
     }
 
-    button {
-        width: 100%; /* Botões ocupam toda a largura */
-    }
-
-    .product {
-        width: 100%; /* Produtos ocupam toda a largura */
+    #loginContainer {
+        width: 90%; /* Aumenta a largura em telas menores */
     }
 }
 
 @media (max-width: 480px) {
     #products {
-        grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+        grid-template-columns:(2,1fr); /* Uma coluna em telas pequenas */
     }
 
     nav ul {
-        flex-direction: column; /* Coloca os itens em coluna */
-        margin-top: 1rem;
+        flex-direction: row; /* Coloca os itens em coluna */
+        position: fixed;
+        right: 0;
+        bottom: o;
     }
 
     #cart {
         height: auto; /* Ajusta a altura do carrinho */
-    }
-
-    #checkoutButton {
-        margin-left: 0; /* Remove a margem em telas pequenas */
-        width: 100%; /* Botão ocupa toda a largura */
     }
 
     .coloborador {
@@ -331,11 +322,7 @@ button:hover {
         margin-right: 0; /* Remove a margem */
     }
 
-    .modal-content {
-        width: 90%; /* Largura da imagem do modal */
-    }
-
-    .close {
-        font-size: 25px; /* Reduz o tamanho do botão de fechar */
+    #checkoutButton {
+        margin-left: 0; /* Remove a margem em telas pequenas */
     }
 }
