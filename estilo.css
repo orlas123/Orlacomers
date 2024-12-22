@@ -80,6 +80,7 @@ nav {
     width: 100%;
     background-color: red;
     z-index: 1000;
+    margin: 0 auto
 }
 
 nav ul {
@@ -118,7 +119,7 @@ nav ul li a {
 #cartCount {
     position: fixed;
     buttom: 20px;
-    left: 300px;
+    left: 200px;
     right: 0px;
     font-size: larger;
 }
@@ -171,7 +172,7 @@ button:hover {
     grid-template-columns: repeat(4, 1fr); /* Responsivo */
     gap: 5px;
     justify-content: center;
-    padding: 10px;
+    padding: 0;
     width: 100%;
 }
 
@@ -234,6 +235,7 @@ button:hover {
     text-align: center;
     border: 2px solid white;
     margin-top: 2rem;
+    font-size:auto
 }
 
 .coloborador {
