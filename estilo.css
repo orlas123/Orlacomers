@@ -67,14 +67,14 @@ body {
     top:0;
     left:0;
     border-radius: 30px;
-    font-size:14px;
+    font-size:8px;
 }
 
 
 nav {
     position: fixed;
     bottom: 0;
-    left: 0;
+    rigth: 0;
     width: 100%;
     background-color: red;
     z-index: 1000;
@@ -101,7 +101,7 @@ nav ul li a {
     flex-direction: column; 
     align-items: center; 
     width: 100%;
-    margin-left: 2rem;
+    margin-rigth: 0;
    
 }
 
@@ -115,7 +115,7 @@ nav ul li a {
 
 #cartCount {
     position: fixed;
-    top: 20px;
+    buttom: 20px;
     left: 400px;
     right: 0px;
     font-size: larger;
