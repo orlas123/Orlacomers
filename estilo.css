@@ -101,7 +101,7 @@ nav ul li a {
     flex-direction: column; 
     align-items: center; 
     width: 100%;
-    margin-left: 6rem;
+    margin-left: 2rem;
    
 }
 
@@ -293,6 +293,9 @@ button:hover {
         overflow: hidden;
         width: 100%;
     }
+    .log{
+        font-size:10px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -303,6 +306,9 @@ button:hover {
 
     #loginContainer {
         width: 90%; /* Aumenta a largura em telas menores */
+    }
+     .log{
+        font-size:10px;
     }
 }
 
@@ -328,5 +334,8 @@ button:hover {
 
     #checkoutButton {
         margin-left: 0; /* Remove a margem em telas pequenas */
+    }
+     .log{
+        font-size:10px;
     }
 }
