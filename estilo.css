@@ -9,7 +9,7 @@ body {
     padding-top: 60px;
     background-color: rgb(250, 7, 7);
     width:100%
-     max-width: 370px;
+    /* max-width: 370px;*/
 }
 
 /* Container de Login */
@@ -120,8 +120,8 @@ nav ul li a {
 
 #cartCount {
     position: fixed;
-    buttom: 18px;
-    left: 100px;
+    buttom: 14px;
+    left: 110px;
     right: 0px;
     font-size: larger;
 }
