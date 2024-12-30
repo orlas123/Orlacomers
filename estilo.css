@@ -317,6 +317,9 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
+   nav {
+        position:fixed;
+    }
     body {
         font-size: 16px; /* Corrigido */
     }
@@ -328,6 +331,9 @@ button:hover {
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+    nav {
+        position:fixed;
     }
    .logo {
        position: fixed;
@@ -347,12 +353,15 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
+    nav {
+        position:fixed;
+    }
      .logo {
        position: fixed;
     top: 0;
     right: 0;
     width: 100%;
-        max-width: 400px;
+        max-width:380px;
     background-color: red;
     z-index: 1000;
     }
