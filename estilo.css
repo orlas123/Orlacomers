@@ -329,6 +329,15 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
+   .logo {
+       position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+        max-width: 600px;
+    background-color: red;
+    z-index: 1000;
+    }
 }
 
 @media (max-width: 480px) {
