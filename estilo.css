@@ -287,7 +287,7 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+    background-color: black; /* Fundo escuro com opacidade */
 }
 
 /* Estilo da imagem do modal */
@@ -307,6 +307,19 @@ button:hover {
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
+}
+.vendedr {
+    width: 100%;
+    max-width: 350px; /* Largura máxima */
+    margin-top: 4rem;
+    margin-left: 4rem;
+    display: block;
+    align-content: center;
+
+}
+#sellerPanelLink{
+    margin-left: 10rem;
+    color: white;
 }
 
 /* Estilos responsivos */
