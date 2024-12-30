@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-   margin-top: 5px;
+    margin-top: 5px;
     background-color: rgb(250, 7, 7);
 }
 
@@ -49,21 +49,26 @@ body {
     width: 100%; /* Ocupa toda a largura */
     margin-top: 2rem;
 }
-.logo{
+
+.logo {
     position: fixed;
     top: 0;
-    right: 0;
-    width: 100%;
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    max-width: 100%; /* Largura máxima */
+    margin: 0 10px; /* Espaçamento lateral */
     background-color: red;
     z-index: 1000;
+    padding: 10px; /* Espaçamento interno */
 }
-.logo ul{
+
+.logo ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-   
 }
+
 .logo ul li {
     text-decoration: none;
     color: white;
@@ -73,23 +78,25 @@ body {
     align-items: center; 
     width: 100%;
 }
-.saudacao{
+
+.saudacao {
     font-size: 90%;
     border-left: 2px solid white;
     box-shadow: white;
 }
-.whatssap{
+
+.whatssap {
     margin-left: 10rem;
     color: white;
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.imglog{
-   width: 50px;
-   height: 50px;
-   object-fit: cover;
-   border-radius: 30px;
+.imglog {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 /* Corpo do site */
@@ -105,13 +112,14 @@ body {
     background-color: black;
 }
 
-
-
+/* Navegação fixa */
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0; /* Alinha à direita */
+    max-width: 100%; /* Largura máxima */
+    margin: 0 10px; /* Espaçamento lateral */
     background-color: red;
     z-index: 1000;
 }
@@ -127,7 +135,6 @@ nav ul {
 nav ul li {
     text-align: center;
     flex: 1;
-     
 }
 
 nav ul li a {
@@ -137,8 +144,6 @@ nav ul li a {
     flex-direction: column; 
     align-items: center; 
     width: 100%;
-   
-   
 }
 
 #cart {
@@ -151,7 +156,7 @@ nav ul li a {
 
 #cartCount {
     position: fixed;
-    bottom:43px;
+    bottom: 43px;
     left: 53px;
     right: 0px;
     font-size: larger;
@@ -241,8 +246,6 @@ button:hover {
     color: black;
     border-radius: 2px;
     width: 100%;
-   
-   
 }
 
 .imgprodoct {
@@ -250,7 +253,6 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais específica */
     border-radius: 2px;
     width: 100%;
-    
 }
 
 .contatos {
@@ -261,11 +263,10 @@ button:hover {
     justify-content: space-between;
     font-family: 'Times New Roman', Times, serif;
 }
-.gerenciador{
+
+.gerenciador {
     margin-left: 2rem;
 }
-
-
 
 .coloborador {
     width: 200px;
@@ -274,11 +275,8 @@ button:hover {
     padding: 8px;
     font-size: 16px;
     margin-right: 10rem;
-   margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
-
-
-
 
 /* Estilo do modal */
 .modal {
@@ -289,9 +287,7 @@ button:hover {
     top: 0;
     width: 100%; /* Largura total */
     height: 100%; /* Altura total */
-    height: 900px;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
-    background-color: black;
 }
 
 /* Estilo da imagem do modal */
@@ -313,58 +309,33 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-  /* Estilos responsivos */
+/* Estilos responsivos */
 @media (max-width: 900px) {
-     .containerPrincipal{
+    .containerPrincipal {
         max-width: 800px;
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
     body {
-        fonnt-sizes:16px;
+        font-size: 16px; /* Corrigido */
     }
-    nav {
-        fonnt-sizes:16px;
-       
-        
-    }
-    
 }
+
 @media (max-width: 768px) {
-     .containerPrincipal{
+    .containerPrincipal {
         max-width: 600px;
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
-     }
-    body{
-        fonnt-sizes:16px;
-    }
- .nav {
-        fonnt-sizes:16px;
-       
-    }
-
 }
 
 @media (max-width: 480px) {
-    .containerPrincipal{
+    .containerPrincipal {
         max-width: 400px;
     }
     #products {
         grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
-    }
-     }
-    body{
-        fonnt-sizes:16px;
-    }
- .nav {
-        fonnt-sizes:16px;
-       
-        
     }
 }
