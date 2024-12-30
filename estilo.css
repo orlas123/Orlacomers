@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
      box-sizing: border-box;
-    margin-top: 5px;
+    margin-top: 60px;
     background-color: rgb(250, 7, 7);
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .whatssap {
-    margin-left: 10rem;
+    margin-left: 13rem;
     color: white;
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
@@ -303,7 +303,7 @@ button:hover {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: white;
+    color: red;
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
@@ -319,6 +319,10 @@ button:hover {
     }
    nav {
         position:fixed;
+       buttom:0;
+       rigth:0;
+       width:100%
+       z-index:1000;
     }
     body {
         font-size: 16px; /* Corrigido */
@@ -334,6 +338,11 @@ button:hover {
     }
     nav {
         position:fixed;
+          position:fixed;
+       buttom:0;
+       rigth:0;
+       width:100%
+       z-index:1000;
     }
    .logo {
        position: fixed;
@@ -355,6 +364,11 @@ button:hover {
     }
     nav {
         position:fixed;
+          position:fixed;
+       buttom:0;
+       rigth:0;
+       width:100%
+       z-index:1000;
     }
      .logo {
        position: fixed;
