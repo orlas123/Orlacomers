@@ -317,6 +317,9 @@ button:hover {
 
   /* Estilos responsivos */
 @media (max-width: 900px) {
+     .containerPrincipal{
+        max-width: 800px;
+    }
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
@@ -331,6 +334,9 @@ button:hover {
     
 }
 @media (max-width: 768px) {
+     .containerPrincipal{
+        max-width: 600px;
+    }
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
@@ -338,7 +344,7 @@ button:hover {
     body{
         fonnt-sizes:16px;
     }
- nav {
+ .nav {
         fonnt-sizes:16px;
         padding:10px;
         
@@ -347,6 +353,9 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+    .containerPrincipal{
+        max-width: 400px;
+    }
     #products {
         grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
     }
@@ -354,7 +363,7 @@ button:hover {
     body{
         fonnt-sizes:16px;
     }
- nav {
+ .nav {
         fonnt-sizes:16px;
         padding:10px;
         
