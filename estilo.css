@@ -6,6 +6,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+     box-sizing: border-box;
     margin-top: 5px;
     background-color: rgb(250, 7, 7);
 }
@@ -55,7 +56,7 @@ body {
     top: 0;
     left: 0; /* Alinha à esquerda */
     right: 0; /* Alinha à direita */
-    max-width: 100%; /* Largura máxima */
+    max-width: 1200px; /* Largura máxima */
     margin: 0 10px; /* Espaçamento lateral */
     background-color: red;
     z-index: 1000;
@@ -102,7 +103,7 @@ body {
 /* Corpo do site */
 .containerPrincipal {
     width: 100%;
-    max-width: 1295px; /* Se necessário, mantenha um max-width */
+    max-width: 1200px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
 }
 
@@ -118,8 +119,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0; /* Alinha à direita */
-    max-width: 100%; /* Largura máxima */
-    margin: 0 10px; /* Espaçamento lateral */
+    max-width: 1200px; /* Largura máxima */
     background-color: red;
     z-index: 1000;
 }
@@ -148,8 +148,7 @@ nav ul li a {
 
 #cart {
     width: 100%; /* Ocupar 100% da largura */
-    max-width: 1340px; /* Se necessário, mantenha um max-width */
-    border: 2px solid;
+    max-width: 1200px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
     height: 560px; 
 }
@@ -212,6 +211,7 @@ button:hover {
     justify-content: center;
     padding: 10px;
     width: 100%;
+    
 }
 
 .quantity-controls {
