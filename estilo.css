@@ -334,7 +334,7 @@ button:hover {
     top: 0;
     right: 0;
     width: 100%;
-        max-width: 600px;
+        max-width: 500px;
     background-color: red;
     z-index: 1000;
     }
@@ -345,6 +345,15 @@ button:hover {
         max-width: 400px;
     }
     #products {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+     .logo {
+       position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+        max-width: 400px;
+    background-color: red;
+    z-index: 1000;
     }
 }
