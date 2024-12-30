@@ -2,12 +2,15 @@
 <html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Orlacomers</title>
     <link rel="stylesheet" href="estilo.css">    
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <meta name="google-site-verification" content="CplfiMz73s_8D42mHyFcsDp03eg3bJzyl8QwNkShUvs" />
-    <link rel="icon" href="./imagens/LL.png" type="image/X-icon" style=" border-radius: 40px;">
+    <link rel="icon" href="./imagens/LL.png" type="image/X-icon" style="  width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;">
     <meta name="description" content="faça sua compra e encomendas na loja orlacomers com um preso ecesivel">
     <link rel="manifest" href="/manifest.json">
 
@@ -22,16 +25,21 @@
     </div>
 
     <div class="containerPrincipal" id="storeContainer" style="display:none;">
-       
+        <div class="logo">
+            <ul>
+           <li><img class="imglog" src="./imagens/LL.png" alt="orlacomers"><h3 class="logp">orlacomers</h3></li>
+           <li> <h1 class="saudacao">Bem-vindo à Orlacomers, <span id="userName"></span>!</h1></li>
+           <li><a class="whatssap" href="https://wa.me/+79774042572" target="_blank"><i class='bx bxl-whatsapp'>whatssap</i></a></li>
+        </ul>
+        </div>
         <nav>
             <ul>
+               
                 <li><a href="#" id="homeLink"><i class='bx bx-home'></i> principal</a></li>
                 <li><a href="#" id="cartLink"><i class='bx bx-cart-alt'></i> carinho <span id="cartCount">0</span></a></li>
                 <li><a href="#" id="profileLink"><i class='bx bx-user-circle'></i> Perfil</a></li>
             </ul>
         </nav>
-
-        <h1 class="saudacao">Bem-vindo à Orlacomers, <span id="userName"></span>!</h1>
         <a href="#" id="sellerPanelLink">.</a>
 
         <div id="products">
@@ -254,7 +262,7 @@
             <div class="product" data-product="salto" data-price="10000" data-image="imagens/salto1.jpg">
                 <img class="imgprodoct" src="./imagens/salto1.jpg" alt="">
                 <h5>salto</h5>
-                <strong>8000₣</strong>
+                <strong>10000₣</strong>
                 <button class="add-to-cart">Adicionar ao Carrinho</button>
             </div>
             <div class="product" data-product="izas" data-price="1500" data-image="imagens/izas.jpg">
