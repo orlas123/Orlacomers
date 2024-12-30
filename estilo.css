@@ -316,6 +316,11 @@ button:hover {
 
 
   /* Estilos responsivos */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
