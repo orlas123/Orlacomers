@@ -320,8 +320,13 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
-    body{
+    body {
         fonnt-sizes:16px;
+    }
+    nav {
+        fonnt-sizes:16px;
+        padding:10px;
+        
     }
     
 }
@@ -333,6 +338,12 @@ button:hover {
     body{
         fonnt-sizes:16px;
     }
+ nav {
+        fonnt-sizes:16px;
+        padding:10px;
+        
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -342,5 +353,10 @@ button:hover {
      }
     body{
         fonnt-sizes:16px;
+    }
+ nav {
+        fonnt-sizes:16px;
+        padding:10px;
+        
     }
 }
