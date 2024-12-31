@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
      box-sizing: border-box;
-    margin-top: 60px;
+     padding:2rem;
     background-color: rgb(250, 7, 7);
 }
 
@@ -57,7 +57,7 @@ body {
     left: 0; /* Alinha à esquerda */
     right: 0; /* Alinha à direita */
     max-width: 1200px; /* Largura máxima */
-    margin: 0 10px; /* Espaçamento lateral */
+    width:100%
     background-color: red;
     z-index: 1000;
     padding: 10px; /* Espaçamento interno */
@@ -84,6 +84,7 @@ body {
     font-size: 90%;
     border-left: 2px solid white;
     box-shadow: white;
+    padding-top:2rem;
 }
 
 .whatssap {
