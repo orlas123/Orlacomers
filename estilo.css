@@ -104,7 +104,7 @@ body {
 /* Corpo do site */
 .containerPrincipal {
     width: 100%;
-    max-width: 1200px; /* Se necessário, mantenha um max-width */
+    max-width: 1300px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
 }
 
@@ -210,7 +210,7 @@ button:hover {
     grid-template-columns: repeat(4, 1fr); /* Responsivo */
     gap: 5px;
     justify-content: center;
-    padding: 10px;
+   aling-items:center;
     width: 100%;
     
 }
