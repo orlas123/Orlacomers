@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
      box-sizing: border-box;
-   /*  padding:2rem; */
+     padding:2rem; 
     background-color: rgb(250, 7, 7);
 }
 
@@ -54,13 +54,13 @@ body {
 .logo {
     position: fixed;
     top: 0;
-    left: 0; /* Alinha à esquerda */
     right: 0; /* Alinha à direita */
-    max-width: 1200px; /* Largura máxima */
     width:100%
     background-color: red;
     z-index: 1000;
     padding: 10px; /* Espaçamento interno */
+    marging:button 2rem;
+    border-raduis: 2px solid white;
 }
 
 .logo ul {
@@ -68,6 +68,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    padding: o auto;
 }
 
 .logo ul li {
@@ -88,14 +89,14 @@ body {
 }
 
 .whatssap {
-    margin-left: 13rem;
+   background-color:black;
     color: white;
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .imglog {
-    width: 50px;
+    width: 50%;
     height: 50px;
     object-fit: cover;
     border-radius: 30px;
@@ -119,7 +120,7 @@ nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0; /* Alinha à direita */
+  /*  right: 0; /* Alinha à direita */
     width: 100%; /* Largura máxima */
     background-color: red;
     z-index: 1000;
@@ -297,7 +298,7 @@ button:hover {
     margin: auto;
     display: block;
     width: 100%; /* Largura da imagem */
-    /*max-width: 500px; /* Largura máxima da imagem */
+    max-width: 500px; /* Largura máxima da imagem */
 }
 
 /* Estilo do botão de fechar */
@@ -325,7 +326,7 @@ button:hover {
     color: white;
 }
 
-/* Estilos responsivos 
+/* Estilos responsivos */
 @media (max-width: 900px) {
     .containerPrincipal {
         max-width: 800px;
@@ -334,7 +335,7 @@ button:hover {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
         
     }
-/* Estilos responsivos
+
    nav {
         position:fixed;
        buttom:0;
@@ -346,7 +347,7 @@ button:hover {
         font-size: 16px; /* Corrigido */
     }
 }
-/* Estilos responsivos
+
 @media (max-width: 768px) {
     .containerPrincipal {
         max-width: 600px;
@@ -354,7 +355,7 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
-/* Estilos responsivos
+
     nav {
         position:fixed;
           position:fixed;
@@ -381,7 +382,7 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
-/* Estilos responsivos
+
     nav {
         position:fixed;
           position:fixed;
@@ -390,7 +391,7 @@ button:hover {
        width:100%
        z-index:1000;
     }
-/* 
+
      .logo {
        position: fixed;
     top: 0;
@@ -400,6 +401,6 @@ button:hover {
     background-color: red;
     z-index: 1000;
     }
-*/
+
 }
 
