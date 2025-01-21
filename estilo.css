@@ -17,7 +17,7 @@ body {
 /* Grid de produtos */
 #products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(4, 1fr); 
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@ nav ul li a {
     width: 100%;
 }
 
-/* Estilos Responsivos */
+
 /* Estilos Responsivos */
 @media (max-width: 900px) {
     .containerPrincipal {
