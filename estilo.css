@@ -113,6 +113,7 @@ body {
 .containerPrincipal {
     display:flex;
     justify-content:center;
+    marging-right:6rem;
      width: 100%;
     max-width: 1390px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
