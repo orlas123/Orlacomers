@@ -96,7 +96,7 @@ body {
 }
 
 .whatssap {
-  marging-left:2rem
+  marging-left:4rem
     color: white;
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
@@ -113,7 +113,6 @@ body {
 .containerPrincipal {
     display:flex;
     justify-content:center;
-    aling-items:center;
      width: 100%;
     max-width: 1390px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
