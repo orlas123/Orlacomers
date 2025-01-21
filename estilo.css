@@ -104,7 +104,7 @@ body {
 /* Corpo do site */
 .containerPrincipal {
     width: 100%;
-    max-width: 1300px; /* Se necessário, mantenha um max-width */
+  /*  max-width: 1300px;  Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
 }
 
@@ -120,7 +120,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0; /* Alinha à direita */
-    max-width: 1200px; /* Largura máxima */
+    width: 100%; /* Largura máxima */
     background-color: red;
     z-index: 1000;
 }
@@ -212,6 +212,7 @@ button:hover {
     justify-content: center;
    aling-items:center;
     width: 100%;
+    marging: 0 auto;
     
 }
 
@@ -296,7 +297,7 @@ button:hover {
     margin: auto;
     display: block;
     width: 100%; /* Largura da imagem */
-    max-width: 500px; /* Largura máxima da imagem */
+    /*max-width: 500px; /* Largura máxima da imagem */
 }
 
 /* Estilo do botão de fechar */
@@ -308,6 +309,7 @@ button:hover {
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
+    background-color :red;
 }
 .vendedr {
     width: 100%;
@@ -330,6 +332,7 @@ button:hover {
     }
     #products {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+        
     }
    nav {
         position:fixed;
