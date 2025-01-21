@@ -92,6 +92,7 @@ nav ul li a {
     }
     #products {
         grid-template-columns: repeat(2, 1fr); 
+        width:100%
     }
 }
 
@@ -101,6 +102,7 @@ nav ul li a {
     }
     #products {
         grid-template-columns: repeat(2, 1fr); 
+        width:100%
     }
 }
 
@@ -110,5 +112,6 @@ nav ul li a {
     }
     #products {
         grid-template-columns: repeat(2, 1fr); 
+        width:100%
     }
 }
