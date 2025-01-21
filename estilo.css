@@ -104,8 +104,11 @@ body {
 
 /* Corpo do site */
 .containerPrincipal {
-    width: 100%;
-  /*  max-width: 1300px;  Se necessário, mantenha um max-width */
+    display:flex;
+    justify-content:center;
+    aling-items:center;
+     width: 100%;
+    max-width: 1300px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
 }
 
