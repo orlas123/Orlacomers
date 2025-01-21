@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
+html,body{
+    width:100%;
+    heigth:100%;
+    marging:0;
+    padding:0;
+    overflow:hiden;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -108,7 +115,7 @@ body {
     justify-content:center;
     aling-items:center;
      width: 100%;
-    max-width: 1370px; /* Se necessário, mantenha um max-width */
+    max-width: 1390px; /* Se necessário, mantenha um max-width */
     margin: 0 auto; /* Centraliza */
 }
 
