@@ -1,6 +1,15 @@
 * {
     box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
+html:lang(pt-PT) {
+  /* Desativa o zoom do usuário */
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html,body{
     width:100%;
     heigth:100%;
