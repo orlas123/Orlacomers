@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding: 2rem; 
+    padding: 2rem;
     background-color: rgb(250, 7, 7);
 }
 
@@ -17,7 +17,7 @@ body {
 /* Grid de produtos */
 #products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,12 @@ body {
     color: black;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Login Container */
@@ -79,11 +85,10 @@ nav ul li a {
     text-decoration: none;
     color: white;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
-
 
 /* Estilos Responsivos */
 @media (max-width: 900px) {
@@ -91,8 +96,8 @@ nav ul li a {
         padding: 1rem;
     }
     #products {
-        grid-template-columns: repeat(2, 1fr); 
-        width:100%
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
 
@@ -101,8 +106,8 @@ nav ul li a {
         padding: 1rem;
     }
     #products {
-        grid-template-columns: repeat(2, 1fr); 
-        width:100%
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
 
@@ -111,7 +116,7 @@ nav ul li a {
         padding: 1rem;
     }
     #products {
-        grid-template-columns: repeat(2, 1fr); 
-        width:100%
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
