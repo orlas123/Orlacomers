@@ -40,7 +40,7 @@ body {
 .product img {
     width: 100%;
     width:116px
-   heigth:100%
+   height:100%
    /* height: calc(100% - 2rem); /* Ajustado */
     object-fit: cover;
     /*margin-bottom: 1rem; /* Ajustado */
@@ -49,7 +49,7 @@ body {
 /* Login Container */
 #loginContainer {
     width: 100%;
-    heigth:1400px;
+    height:1400px;
     max-width: 300px;
     background-color: #fff;
     border: 1px solid #ccc;
