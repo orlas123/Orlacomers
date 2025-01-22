@@ -37,13 +37,43 @@ body {
    /* height: 350px; /* Ajustado */
 }
 
-.product img {
+.imgprodoct {
     width: 100%;
     width:116px
    height:100%
    /* height: calc(100% - 2rem); /* Ajustado */
     object-fit: cover;
     /*margin-bottom: 1rem; /* Ajustado */
+}
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fica em cima da página */
+    z-index: 1000; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: black; /* Fundo escuro com opacidade */
+}
+
+/* Estilo da imagem do modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%; /* Largura da imagem */
+    max-width: 500px; /* Largura máxima da imagem */
+}
+
+/* Estilo do botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+  
 }
 
 /* Login Container */
