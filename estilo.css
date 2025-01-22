@@ -75,6 +75,13 @@ body {
     cursor: pointer;
   
 }
+#cartCount {
+    position: fixed;
+    bottom: 43px;
+    left: 53px;
+    right: 0px;
+    font-size: larger;
+}
 
 /* Login Container */
 #loginContainer {
@@ -92,6 +99,57 @@ body {
     margin: 2rem auto;
     text-align: center;
 }
+#profile {
+    width: 100%;
+    height: 350px;    
+}
+
+#nome, #numero {
+    width: 210px;
+    height: 30px;
+    text-align: center;
+}
+
+#loginButton {
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: 2rem;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    right: 0; /* Alinha à direita */
+    width:100%
+    background-color: red;
+    z-index: 1000;
+    padding: 10px; /* Espaçamento interno */
+    marging:button 2rem;
+    border-raduis: 2px solid white;
+}
+
+.logo ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: o auto;
+}
+.imglog {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.logo ul li {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex: 1;
+    align-items: center; 
+    width: 100%;
+}
+
 
 /* Navegação Fixa */
 nav {
