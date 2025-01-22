@@ -103,7 +103,7 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .containerPrincipal {
-        padding: 2rem; /* Ajustado */
+        padding: 4rem; /* Ajustado */
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
@@ -111,9 +111,9 @@ nav ul li a {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .containerPrincipal {
-        padding: 2rem; /* Ajustado */
+        padding: 4rem; /* Ajustado */
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
