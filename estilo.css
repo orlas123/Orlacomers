@@ -17,7 +17,7 @@ body {
 #products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -34,11 +34,12 @@ body {
     color: black;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 350px; /* Ajustado */
+   /* height: 350px; /* Ajustado */
 }
 
 .product img {
     width: 100%;
+    width:110px
     height: calc(100% - 2rem); /* Ajustado */
     object-fit: cover;
     margin-bottom: 1rem; /* Ajustado */
@@ -47,7 +48,8 @@ body {
 /* Login Container */
 #loginContainer {
     width: 100%;
-    max-width: 350px;
+    heigth:400px;
+    max-width: 300px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
