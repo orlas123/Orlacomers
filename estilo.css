@@ -10,14 +10,14 @@ body {
 .container {
     padding: 1rem;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1250px;
 }
 
 /* Grid de produtos */
 #products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 4px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -39,7 +39,7 @@ body {
 
 .imgprodoct {
     width: 100%;
-    width:116px
+    width:120px
    height:100%
    /* height: calc(100% - 2rem); /* Ajustado */
     object-fit: cover;
@@ -124,7 +124,7 @@ nav ul li a {
     align-items: center;
     width: 100%;
 }i {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 button {
