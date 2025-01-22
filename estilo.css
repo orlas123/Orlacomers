@@ -77,8 +77,8 @@ body {
 }
 #cartCount {
     position: fixed;
-    bottom: 43px;
-    left: 53px;
+    bottom: 48px;
+    left: 45px;
     right: 0px;
     font-size: larger;
 }
@@ -115,15 +115,12 @@ body {
     margin-top: 2rem;
 }
 .logo {
-    position: fixed;
+   position: fixed;
     top: 0;
-    right: 0; /* Alinha à direita */
-    width:100%
+    left: 0;
+    width: 100%;
     background-color: red;
     z-index: 1000;
-    padding: 10px; /* Espaçamento interno */
-    marging:button 2rem;
-    border-raduis: 2px solid white;
 }
 
 .logo ul {
@@ -145,6 +142,7 @@ body {
     color: white;
     display: flex;
     text-align: center;
+      justify-content: space-around;
     flex: 1;
     align-items: center; 
     width: 100%;
