@@ -31,7 +31,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem; /* Ajustado */
+    /*padding: 0.5rem; /* Ajustado */
     text-align: center;
     color: black;
     border-radius: 5px;
@@ -80,7 +80,7 @@ body {
 #cartCount {
     position: fixed;
     bottom: 48px;
-    left: 35px;
+    left: 30px;
     right: 0px;
     font-size: larger;
 }
@@ -144,14 +144,14 @@ body {
     color: white;
     display: flex;
     text-align: center;
-    padding:4rem;
+    padding:2rem;
       justify-content: space-around;
     flex: 1;
     align-items: center; 
     width: 100%;
 }
 .whatssap{
-    font-size:24px;
+    font-size:18px;
 }
 
 
