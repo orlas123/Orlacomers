@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(250, 7, 7);
+    font-color:white;
 }
 
 .container {
@@ -78,7 +79,7 @@ body {
 #cartCount {
     position: fixed;
     bottom: 48px;
-    left: 45px;
+    left: 35px;
     right: 0px;
     font-size: larger;
 }
@@ -142,10 +143,14 @@ body {
     color: white;
     display: flex;
     text-align: center;
+    padding:4rem;
       justify-content: space-around;
     flex: 1;
     align-items: center; 
     width: 100%;
+}
+.whatssap{
+    font-size:24px;
 }
 
 
