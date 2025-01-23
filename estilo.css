@@ -151,7 +151,7 @@ body {
     width: 100%;
 }
 .whatssap{
-    font-size:10px;
+    font-size:15px;
     width:40px
 }
 
@@ -224,9 +224,18 @@ button:hover {
     }
 }
 
+@media (max-width: 481px) {
+    .containerPrincipal {
+        padding: 0.05rem;
+    }
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
 @media (max-width: 480px) {
     .containerPrincipal {
-        padding: 1rem;
+        padding: 1.05rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
