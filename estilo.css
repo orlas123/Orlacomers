@@ -121,7 +121,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: red;
+    color:white
+     border-radius: 2px white;
     z-index: 1000;
 }
 
