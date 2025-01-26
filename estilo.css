@@ -8,6 +8,9 @@ body {
     font-color:white;
 }
 .saudacao{
+    display:flex;
+    text-align:center;
+    color:white;
     font-size:1,5;
      border-radius:2px solid white;
     paddin:10px
@@ -145,6 +148,7 @@ body {
     height: 50px;
     object-fit: cover;
     border-radius: 30px;
+    marging-rigth:5px
 }
 
 .logo ul li {
@@ -158,9 +162,8 @@ body {
     align-items: center; 
     width: 100%;
 }
-.bx bxl-whatsapp{
+.whatsapp{
     font-size:15px;
-    width:40px
      background-color: white
     font-color:white;
 }
