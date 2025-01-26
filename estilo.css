@@ -11,7 +11,7 @@ body {
     display:flex;
     text-align:center;
     color:white;
-    font-size:1,5rem;
+    font-size:10px;
      border-radius:2px solid white;
     paddin:10px
 }
@@ -165,10 +165,10 @@ body {
     align-items: center; 
     width: 100%;
 }
-.whatsapp{
-    font-size:15px;
-     background-color:white;
-    font-color:white;
+.whatssap {
+    font-color white;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
