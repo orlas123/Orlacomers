@@ -11,7 +11,7 @@ body {
     display:flex;
     text-align:center;
     color:white;
-    font-size:1,5;
+    font-size:1,5rem;
      border-radius:2px solid white;
     paddin:10px
 }
@@ -39,7 +39,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem; /* Ajustado */
+    padding: 10px; /* Ajustado */
     margin: 0;
     text-align: center;
     color: black;
@@ -148,7 +148,10 @@ body {
     height: 50px;
     object-fit: cover;
     border-radius: 30px;
-    marging-rigth:5px
+    marging-rigth:7px
+}
+.logp{
+   marging-rigth:7px  
 }
 
 .logo ul li {
@@ -164,7 +167,7 @@ body {
 }
 .whatsapp{
     font-size:15px;
-     background-color: white
+     background-color:white;
     font-color:white;
 }
 
