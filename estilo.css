@@ -30,8 +30,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-     max-width: 1280px;
-    margin-bottom: 1rem;
+     max-width: 1300px;
+    margin-bottom: 2rem;
    /* overflow: hidden;*/
 }
 
@@ -39,7 +39,8 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 10px; /* Ajustado */
+    padding: 2px; /* Ajustado */
+    width:100%;
     margin: 0;
     text-align: center;
     color: black;
@@ -148,10 +149,10 @@ body {
     height: 50px;
     object-fit: cover;
     border-radius: 30px;
-    marging-rigth:7px;
+    margin-rigth:10px;
 }
 .logp{
-   marging-rigth:8px;  
+   margin-rigth108px;  
 }
 
 .logo ul li {
@@ -162,6 +163,7 @@ body {
     padding:1px;
       justify-content: space-around;
     flex: 1;
+    font-size:small;
     align-items: center; 
     width: 100%;
 }
