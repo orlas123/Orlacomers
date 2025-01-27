@@ -50,7 +50,7 @@ body {
 
 .imgprodoct {
     width: 100%;
-    width:7rem
+    heigt:200px;
    height:100%
    /* height: calc(100% - 2rem); /* Ajustado */
     object-fit: cover;
@@ -148,10 +148,10 @@ body {
     height: 50px;
     object-fit: cover;
     border-radius: 30px;
-    marging-rigth:7px
+    marging-rigth:7px;
 }
 .logp{
-   marging-rigth:7px  
+   marging-rigth:8px;  
 }
 
 .logo ul li {
