@@ -138,13 +138,17 @@ body {
     z-index: 1000;
 }
 .lilogo{
-    bacgroud-color:white;
+    backgroud-color:white;
     margin-right: 3rem;
+    border:2px solid white;
     
 }
 .lilogo{
-    bacgroud-color:white;
+    bacgroud-color:grin;
    font-size:small;
+     box-shadow: 0 4px 8px;
+    border-redius: 2px;
+    margin-rigth:10px;
     
 }
 
@@ -160,7 +164,7 @@ body {
     height: 50px;
     object-fit: cover;
     border-radius: 30px;
-    margin-rigth:10px;
+    
 }
 .logp{
    margin-rigth108px;  
