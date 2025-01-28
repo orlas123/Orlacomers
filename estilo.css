@@ -262,14 +262,16 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        height:16rem;
     }
 }
 @media (max-width: 485px) {
     .containerPrincipal {
-        padding: 1.05rem;
+        padding: 0.05rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+         height:16rem;
     }
 }
