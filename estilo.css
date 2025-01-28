@@ -30,8 +30,9 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    paddin:10px;
      max-width: 1300px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
    /* overflow: hidden;*/
 }
 
@@ -135,6 +136,16 @@ body {
     color:white
      border-radius: 2px white;
     z-index: 1000;
+}
+.lilogo{
+    bacgroud-color:white;
+    margin-right: 3rem;
+    
+}
+.lilogo{
+    bacgroud-color:white;
+   font-size:small;
+    
 }
 
 .logo ul {
