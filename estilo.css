@@ -26,13 +26,13 @@ body {
 #products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 4px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    paddin:10px;
+    paddin:5px;
      max-width: 1300px;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
    /* overflow: hidden;*/
 }
 
@@ -40,7 +40,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 2px; /* Ajustado */
+    padding: 4px; /* Ajustado */
     width:100%;
     margin: 0;
     text-align: center;
@@ -148,7 +148,7 @@ body {
    font-size:small;
      box-shadow: 0 4px 8px;
     border-redius: 2px;
-    margin-rigth:12px;
+    margin-rigth:10px;
     
 }
 
@@ -167,7 +167,7 @@ body {
     
 }
 .logp{
-   margin-rigth108px;  
+   margin-rigth: 10px;  
 }
 
 .logo ul li {
@@ -183,10 +183,10 @@ body {
     width: 100%;
 }
 .a whatssap {
-    font-color white;
+    font-color: white;
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
-    background- coolor: black,
+    background-coolor: black,
 }
 
 
