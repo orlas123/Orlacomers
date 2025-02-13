@@ -5,15 +5,18 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(250, 7, 7);
-    font-color:white;
+    color:white;
 }
 .saudacao{
     display:flex;
     text-align:center;
-    color:white;
-    font-size:8px;
-     border-radius:2px solid white;
-    paddin:10px
+    justify-content: center;
+    color:red;
+    font-size:1rem; 
+    margin-top: 3rem;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
 }
 
 .container {
@@ -21,18 +24,29 @@ body {
     margin: 0 auto;
     max-width: 1250px;
 }
+.containerPrincipal{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
 
 /* Grid de produtos */
 #products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    paddin:5px;
-     max-width: 1300px;
-    margin-top: 4rem;
+    
+    padding:10px;
+    
+    
    /* overflow: hidden;*/
 }
 
@@ -46,17 +60,23 @@ body {
     text-align: center;
     color: black;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-height: 200pxpx; /* Ajustado */
+    box-shadow: 0 4px 8px white;
+    /*max-height: 350px; /* Ajustado */
 }
 
 .imgprodoct {
+   
     width: 100%;
-    heigt:200px;
-   height:100%
-   /* height: calc(100% - 2rem); /* Ajustado */
+    height:14rem;
+   
+   
+   
     object-fit: cover;
+   
+   /* height: calc(100% - 2rem); /* Ajustado */
+    
     /*margin-bottom: 1rem; /* Ajustado */
+    
 }
 .modal {
     display: none; /* Oculto por padrão */
@@ -80,7 +100,7 @@ body {
 /* Estilo do botão de fechar */
 .close {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 25px;
     color: red;
     font-size: 35px;
@@ -90,10 +110,13 @@ body {
 }
 #cartCount {
     position: fixed;
-    bottom: 50px;
-    left: 26px;
+    bottom:44px;
+    left: 70px;
     right: 0px;
     font-size: larger;
+    color: white
+    font-weight bolder;
+   
 }
 
 /* Login Container */
@@ -121,44 +144,54 @@ body {
     width: 210px;
     height: 30px;
     text-align: center;
+    color: white;
 }
 
 #loginButton {
     width: 100%; /* Ocupa toda a largura */
     margin-top: 2rem;
 }
-.logo {
+.cabesalho {
+    display: flex;
+    justify-content: space-between;
    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: red;
-    color:white
-     border-radius: 2px white;
     z-index: 1000;
-}
-.lilogo{
-    backgroud-color:white;
-    margin-right: 3rem;
-    border:2px solid white;
-    
-}
-.lilogo{
-    bacgroud-color:grin;
-   font-size:small;
-     box-shadow: 0 4px 8px;
-    border-redius: 2px;
-    margin-rigth:10px;
-    
+   box-shadow:  5 5px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
-.logo ul {
-    list-style-type: none;
+
+.cabesalho ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding: o auto;
+    width: 100%;
+   
 }
+.cabesalho  li {
+   align-items: center;
+   flex: 2;
+    padding: 10px;
+}
+.cabesalho  a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+   
+}
+.cabesalho i{
+ font-size: 34px;
+ background-color: #0af33d;
+ margin-top: 5px;
+
+}
+
+
 .imglog {
     width: 50px;
     height: 50px;
@@ -166,28 +199,27 @@ body {
     border-radius: 30px;
     
 }
-.logp{
-   margin-rigth: 10px;  
+
+
+.whatssap{
+   
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px; 
+}
+.whatssap:hover{
+    color:white;
+    border-radius: 2px;
+    
+}
+.whatssap i{
+  background-color: rgb(77, 238, 77);
+  font-size: 34px;
+  border-radius: 50px;
+  border: #218838;
+  box-shadow: #218838;
 }
 
-.logo ul li {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    text-align: center;
-    padding:1px;
-      justify-content: space-around;
-    flex: 1;
-    font-size:small;
-    align-items: center; 
-    width: 100%;
-}
-.a whatssap {
-    font-color: white;
-    font-size: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-coolor: black,
-}
 
 
 /* Navegação Fixa */
@@ -198,14 +230,15 @@ nav {
     width: 100%;
     background-color: red;
     z-index: 1000;
+    padding: 10px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: space-around;
     margin: 0;
-    padding: 1rem;
+   
 }
 
 nav ul li {
@@ -241,43 +274,49 @@ button:hover {
 /* Estilos Responsivos */
 @media (max-width: 900px) {
     .containerPrincipal {
-        padding: 1rem;
+        padding: 2px;
+        font-size: 1rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        gap: 5px;
     }
 }
 
 @media (max-width: 768px) {
     .containerPrincipal {
-        padding: 1rem;
+        padding: 2px;
+        font-size: 1rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
+        gap: 5px;
     }
 }
 
 @media (max-width: 481px) {
     .containerPrincipal {
-        padding: 0.05rem;
+        padding: 2px;
+        font-size: 1rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        height:16rem;
-        gap:1px
+        height:12rem;
+        gap:5px
     }
 }
 @media (max-width: 485px) {
     .containerPrincipal {
-        padding: 0.05rem;
+        padding: 2px;
+        font-size: 1rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-         height:16rem;
-        gap:1px
+         height:12rem;
+        gap:5px
     }
 }
