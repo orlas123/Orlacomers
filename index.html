@@ -333,6 +333,15 @@
             <button id="install-button">baixar</button>
           </div>
     </div>
+     <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration.scope);
+      }).catch(function(error) {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+    }
+  </script>
   
     <script src="index.js"></script>
 </body>
