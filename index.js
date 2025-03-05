@@ -242,15 +242,7 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => {
-        console.log('Service Worker registado com sucesso:', registration);
-      })
-      .catch((error) => {
-        console.log('Erro ao registar Service Worker:', error);
-      });
-  }
+
   
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
