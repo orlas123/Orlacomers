@@ -280,7 +280,7 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        gap: 5px;
+        gap: 10px;
     }
 }
 
@@ -292,7 +292,7 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        gap: 5px;
+        gap: 10px;
     }
 }
 
@@ -305,7 +305,7 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height:12rem;
-        gap:5px
+        gap:10px
     }
 }
 @media (max-width: 485px) {
@@ -317,6 +317,6 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
          height:12rem;
-        gap:5px
+        gap:10px
     }
 }
