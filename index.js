@@ -242,5 +242,25 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registado com sucesso:', registration);
+      })
+      .catch((error) => {
+        console.log('Erro ao registar Service Worker:', error);
+      });
+  }
+  
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    const installPrompt = document.getElementById('install-prompt');
+    const installButton = document.getElementById('install-button');
+    installPrompt.style.display = 'block';
+    installButton.addEventListener('click', () => {
+      event.prompt();
+      installPrompt.style.display = 'none';
+    });
+  });
 
 
