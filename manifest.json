@@ -3,7 +3,7 @@
     "short_name": "orla",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "red",
+    "background_color": "#FF0000",
     "theme_color": "#000000",
     "icons": [
         {
@@ -12,23 +12,19 @@
             "type": "image/png"
         },
         {
-            "src": "imagens/icon-512x512.png",
+            "src": "/imagens/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
-    ] ,
-    
+    ],
     "screenshots": [
-            {
-                "src": "/imagens/desktop.png",
-                "sizes":"1920x1080",
-                "form_factor": "wide"
-            },
-            {
-                "src": "/screenshot-mobile.png",
-                "sizes":"1080x1920"
-                
-            }
-        ]
-    
+        {
+            "src": "/imagens/desktop.png",
+            "sizes": "1920x1080"
+        },
+        {
+            "src": "/screenshot-mobile.png",
+            "sizes": "1080x1920"
+        }
+    ]
 }
