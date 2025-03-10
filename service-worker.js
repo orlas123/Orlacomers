@@ -1,7 +1,6 @@
 const CACHE_NAME = 'orla-cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
   '/estilo.css',
   '/index.js',
   '/icon-192x192.png'
