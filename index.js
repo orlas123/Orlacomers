@@ -208,42 +208,18 @@ window.onclick = function(event) {
     }
 }
 
-
-    // Lógica para instalação
-    let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
-        
-        // Criar um botão de instalação
-        const installButton = document.createElement('button');
-        installButton.textContent = 'Instalar App';
-        document.body.appendChild(installButton);
-
-        installButton.addEventListener('click', () => {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('Usuário aceitou a instalação');
-                } else {
-                    console.log('Usuário rejeitou a instalação');
-                }
-                deferredPrompt = null;
-            });
-        });
-    });
-}
- 
-  window.addEventListener('beforeinstallprompt', (event) => {
-    event.preventDefault();
-    const installPrompt = document.getElementById('install-prompt');
-    const installButton = document.getElementById('install-button');
-    installPrompt.style.display = 'block';
-    installButton.addEventListener('click', () => {
-      event.prompt();
-      installPrompt.style.display = 'none';
-    });
-  });
+// Registro do Service Worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch((error) => {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+  }
+  
 
 
 
+  
