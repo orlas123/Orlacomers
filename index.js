@@ -208,16 +208,7 @@ window.onclick = function(event) {
     }
 }
 
-// Registro do Service Worker
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('.service-worker.js').then((registration) => {
-            console.log('Service Worker registrado com sucesso:', registration);
-        }).catch((error) => {
-            console.log('Falha ao registrar o Service Worker:', error);
-        });
-    });
-}
+
     // Lógica para instalação
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
