@@ -3,10 +3,10 @@
 const CACHE_NAME = 'orla-cache-v1';
 const urlsToCache = [
   '/',
-  '/estilo.css',
-  '/index.js',
-  '/icon-192x192.png',
-  '/icon-512x512.png',
+  'estilo.css',
+  'index.js',
+  '/imagens/icon-192x192.png',
+  '/imagens/icon-512x512.png',
 ];
 
 // Instalação do Service Worker
