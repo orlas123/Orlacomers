@@ -218,11 +218,6 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
-
-     
-   
-  
-
     // Lógica para instalação
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
