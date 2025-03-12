@@ -1,9 +1,11 @@
+
+// Nome do cache
 const CACHE_NAME = 'orla-cache-v1';
 const urlsToCache = [
   '/',
   '/estilo.css',
   '/index.js',
-  '/icon-192x192.png'
+  '/icon-192x192.png',
   '/icon-512x512.png',
 ];
 
@@ -22,4 +24,3 @@ self.addEventListener('fetch', (event) => {
       .then((response) => response || fetch(event.request))
   );
 });
-
