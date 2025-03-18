@@ -193,7 +193,7 @@ body {
 
 
 .imglog {
-    width: 50px;
+    width: 100%;
     height: 50px;
     object-fit: cover;
     border-radius: 5px;
