@@ -39,12 +39,12 @@ body {
 #products {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px 5px;
+    gap: 5px 5px;
     justify-content: center;
     align-items: center;
     width: 100%;
     
-    padding:10px;
+    padding:5px;
     
     
    /* overflow: hidden;*/
@@ -137,7 +137,8 @@ body {
 }
 #profile {
     width: 100%;
-    height: 350px;    
+    height: 350px; 
+    color:white;
 }
 
 #nome, #numero {
@@ -196,7 +197,7 @@ body {
     width: 100%;
     height: 50px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 
@@ -205,10 +206,11 @@ body {
    
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 5px; 
+    border-radius: 2px; 
+    background-color:white
 }
 .whatssap:hover{
-    color:white;
+    color:black;
     border-radius: 2px;
     
 }
