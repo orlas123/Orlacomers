@@ -2,7 +2,7 @@
   {
     "name": "Orlacomers",
   "short_name": "orlas",
-  "start_url": " /https://orlas123.github.io/Orlacomers/",
+  "start_url": "/Orlacomers//index.html",
   "display": "standalone",
   "background_color": "#FF0000",
   "theme_color": "#ffffff",
