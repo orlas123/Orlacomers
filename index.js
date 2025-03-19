@@ -22,7 +22,7 @@ loginButton.addEventListener('click', () => {
         loginContainer.style.display = 'none';
         storeContainer.style.display = 'block';
     } else {
-        alert("Por favor, preencha ambos os campos: Nome e Número.");
+        alert("Por favor, escrivi na tudo dos campos: Nome e Número.");
     }
 });
 
@@ -151,7 +151,7 @@ document.getElementById('profileLink').addEventListener('click', (event) => {
     document.getElementById('profile').style.display = 'block';
     document.getElementById('cart').style.display = 'none';
     document.getElementById('products').style.display = 'none';
-    document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
+   // document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
 });
 
 // Evento para mostrar a seção do painel do vendedor
