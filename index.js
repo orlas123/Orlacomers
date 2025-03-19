@@ -22,7 +22,7 @@ loginButton.addEventListener('click', () => {
         loginContainer.style.display = 'none';
         storeContainer.style.display = 'block';
     } else {
-        alert("Por favor, escrivi na tudo dos campos: Nome e Número.");
+        alert("Por favor, preencha ambos os campos: Nome e Número.");
     }
 });
 
@@ -115,7 +115,18 @@ document.getElementById('checkoutButton').addEventListener('click', () => {
 };
 
 // Atualizar painel do vendedor
-
+document.getElementById('lastCustomerName').innerText = lastCustomerData.nome;
+document.getElementById('lastCustomerNumber').innerText = lastCustomerData.numero;
+const lastPurchasedProducts = document.getElementById('lastPurchasedProducts');
+lastPurchasedProducts.innerHTML = ''; // Limpa produtos anteriores
+lastCustomerData.produtos.forEach(product => {
+    const productItem = document.createElement('div');
+    productItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;">
+        ${product.name}`;
+    lastPurchasedProducts.appendChild(productItem);
+});
+document.getElementById('lastOrderCode').innerText = lastCustomerData.orderCode;
 
 
     // Limpar o carrinho
@@ -151,7 +162,7 @@ document.getElementById('profileLink').addEventListener('click', (event) => {
     document.getElementById('profile').style.display = 'block';
     document.getElementById('cart').style.display = 'none';
     document.getElementById('products').style.display = 'none';
-   // document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
+    document.getElementById('sellerPanel').style.display = 'none'; // Ocultar painel do vendedor
 });
 
 // Evento para mostrar a seção do painel do vendedor
@@ -196,10 +207,3 @@ window.onclick = function(event) {
         modal.style.display = "none"; // Oculta o modal
     }
 }
-
-
-  
-
-
-
-  
