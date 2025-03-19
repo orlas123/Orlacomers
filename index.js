@@ -115,18 +115,7 @@ document.getElementById('checkoutButton').addEventListener('click', () => {
 };
 
 // Atualizar painel do vendedor
-document.getElementById('lastCustomerName').innerText = lastCustomerData.nome;
-document.getElementById('lastCustomerNumber').innerText = lastCustomerData.numero;
-const lastPurchasedProducts = document.getElementById('lastPurchasedProducts');
-lastPurchasedProducts.innerHTML = ''; // Limpa produtos anteriores
-lastCustomerData.produtos.forEach(product => {
-    const productItem = document.createElement('div');
-    productItem.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;">
-        ${product.name}`;
-    lastPurchasedProducts.appendChild(productItem);
-});
-document.getElementById('lastOrderCode').innerText = lastCustomerData.orderCode;
+
 
 
     // Limpar o carrinho
