@@ -236,3 +236,37 @@ window.addEventListener('click', (event) => {
         imageModal.style.display = 'none';
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const installPrompt = document.getElementById('install-prompt');
+    const installButton = document.getElementById('install-button');
+    const closeButton = document.getElementById('close-button');
+
+    // Função para mostrar o prompt de instalação
+    const showInstallPrompt = () => {
+        installPrompt.style.display = 'block';
+    };
+
+    // Função para lidar com o clique do botão de instalação
+    const handleInstallClick = () => {
+        // Adicione a lógica para instalação aqui
+        console.log('Botão de instalação clicado!'); // Placeholder para a lógica de instalação real
+        // Aqui você pode adicionar a lógica para iniciar a instalação
+    };
+
+    // Função para fechar o prompt
+    const handleCloseClick = () => {
+        installPrompt.style.display = 'none'; // Esconde o prompt após o fechamento
+    };
+
+    // Listener de evento para o botão de instalação
+    installButton.addEventListener('click', handleInstallClick);
+
+    // Listener de evento para o botão de fechar
+    closeButton.addEventListener('click', handleCloseClick);
+
+    // Exemplo de quando mostrar o prompt de instalação
+    // Isso poderia ser baseado em condições específicas em seu aplicativo
+    setTimeout(showInstallPrompt, 2000); // Exibe o prompt após 2 segundos como demonstração
+});
