@@ -237,11 +237,12 @@ window.addEventListener('click', (event) => {
     }
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const installPrompt = document.getElementById('install-prompt');
     const installButton = document.getElementById('install-button');
     const closeButton = document.getElementById('close-button');
+
+    let deferredPrompt; // Armazena o evento de instalação
 
     // Função para mostrar o prompt de instalação
     const showInstallPrompt = () => {
@@ -250,9 +251,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para lidar com o clique do botão de instalação
     const handleInstallClick = () => {
-        // Adicione a lógica para instalação aqui
-        console.log('Botão de instalação clicado!'); // Placeholder para a lógica de instalação real
-        // Aqui você pode adicionar a lógica para iniciar a instalação
+        if (deferredPrompt) {
+            // Mostra o prompt de instalação nativo do navegador
+            deferredPrompt.prompt();
+
+            // Aguarda a resposta do usuário
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('Usuário aceitou a instalação');
+                } else {
+                    console.log('Usuário recusou a instalação');
+                }
+                deferredPrompt = null; // Limpa o evento
+            });
+        }
     };
 
     // Função para fechar o prompt
@@ -265,6 +277,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Listener de evento para o botão de fechar
     closeButton.addEventListener('click', handleCloseClick);
+
+    // Captura o evento de instalação
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault(); // Previne o prompt automático
+        deferredPrompt = e; // Armazena o evento para uso posterior
+        showInstallPrompt(); // Exibe o prompt personalizado
+    });
 
     // Exemplo de quando mostrar o prompt de instalação
     // Isso poderia ser baseado em condições específicas em seu aplicativo
