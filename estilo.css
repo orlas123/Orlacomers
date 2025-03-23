@@ -105,8 +105,7 @@ body {
     color: red;
     font-size: 35px;
     font-weight: bold;
-    cursor: pointer;
-  
+    cursor: pointer; 
 }
 
 #checkoutButton{
@@ -118,12 +117,7 @@ body {
    text-align: center;
     color: white;
 }
-#cartItems{
- display: grid;
- grid-template-columns: repeat(2,1fr);
- gap: 5px;
-  text-align: center;
-  justify-content: center;
+
 #cartCount {
     position: fixed;
     bottom:44px;
