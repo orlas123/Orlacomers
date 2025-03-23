@@ -135,6 +135,9 @@ body {
     margin: 2rem auto;
     text-align: center;
 }
+#install-button{
+   background-color: #218838;
+}
 #profile {
     width: 100%;
     height: 350px; 
