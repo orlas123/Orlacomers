@@ -6,19 +6,19 @@ body {
     box-sizing: border-box;
     background-color: rgb(250, 7, 7);
 }
-.saudacao{
-    display:flex;
-    text-align:center;
+   .saudacao {
+    display: flex;
+    text-align: center;
     justify-content: center;
-    align-item:center;
-    color:red;
-    font-size:1rem; 
+    align-items: center; /* Corrigido de 'align-item' para 'align-items' */
+    color: red;
+    font-size: 1rem; 
     margin-top: 6rem;
+    margin: 0 auto; /* Adicionado para centralizar */
     border-radius: 5px;
     background-color: white;
     padding: 10px;
-    width:100%;
-    
+    width: 90%; /* Alterado para 90% */
 }
 
 .container {
