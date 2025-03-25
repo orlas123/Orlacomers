@@ -20,7 +20,7 @@ body {
     border-radius: 5px;
     background-color: white;
     padding: 10px;
-    width: 90%; /* Alterado para 90% */
+    width: 95%; /* Alterado para 90% */
 }
 
 .container {
@@ -44,7 +44,7 @@ body {
 #products {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
     width: 100%;   
@@ -202,6 +202,7 @@ body {
     object-fit: cover;
     border-radius: 13px;
     margign: 0 auto;
+     background-color: rgb(250, 7, 7);
     
 }
 
