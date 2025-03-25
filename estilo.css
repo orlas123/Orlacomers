@@ -238,18 +238,28 @@ body {
             padding: 10px;
         }
 
+        /* Navegação Fixa */
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: red;
+            z-index: 1000;
+            padding: 10px;
+        }
+
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center; /* Centraliza os itens horizontalmente */
+            justify-content: space-between; /* Distribui os itens para ocupar o espaço total */
             margin: 0;
             padding: 0; /* Remove padding padrão */
-             width: 100%;
         }
 
         nav ul li {
             text-align: center;
-            margin: 0 10px; /* Adiciona margem lateral para espaçamento entre os itens */
+            flex: 1; /* Faz cada item ocupar espaço igual */
         }
 
         nav ul li a {
@@ -265,7 +275,7 @@ body {
         i {
             font-size: 24px;
             color: white;
-        }
+        } 
 
 button {
     color: white;
