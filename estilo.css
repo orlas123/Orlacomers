@@ -321,6 +321,11 @@ button:hover {
      .saudacao{
          font-size:14px;
     }
+     .containerPrincipal {
+        width: 100%; /* Garante que o contêiner ocupe 100% da largura da tela */
+        padding: 0; /* Verifique se não há padding */
+        margin: 0 auto; /* Centraliza o contêiner */
+    }
 }
 
 @media (max-width: 481px) {
