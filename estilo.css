@@ -249,7 +249,7 @@ body {
 
         nav ul li {
             text-align: center;
-            margin: 0 15px; /* Adiciona margem lateral para espaçamento entre os itens */
+            margin: 0 20px; /* Adiciona margem lateral para espaçamento entre os itens */
         }
 
         nav ul li a {
