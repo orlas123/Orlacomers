@@ -111,7 +111,7 @@ body {
 #cart{
     color: white;
     width: 100%;
-    padding:10px
+    
    
 }
 #cartItems ul{
@@ -179,7 +179,7 @@ body {
    box-shadow:  5 5px 10px rgba(0, 0, 0, 0.2);
 }
 .cabesalho item {
-    flex-grow:1
+    flex-grow:2
      align-items: center;
 }
 
@@ -202,22 +202,22 @@ body {
 .cabesalho.a{
     text-decoration: none;
     color: white;
-    margin-bottom: 5px;
+   
    
 }
 .cabesalho i{
  font-size: 34px;
  background-color: #0af33d;
- margin-top: 5px;
 
 }
 
 
 .imglog {
-    width: 100%;
+    width: 90%;
     height: 50px;
     object-fit: cover;
     border-radius: 13px;
+    margign: 0 auto;
     
 }
 
