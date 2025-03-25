@@ -55,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 4px; /* Ajustado */
+    max-width: 1250px;
     width:100%;
     margin: 0;
     text-align: center;
