@@ -244,12 +244,12 @@ body {
             justify-content: center; /* Centraliza os itens horizontalmente */
             margin: 0;
             padding: 0; /* Remove padding padrão */
-             width: 95%;
+             width: 100%;
         }
 
         nav ul li {
             text-align: center;
-            margin: 0 20px; /* Adiciona margem lateral para espaçamento entre os itens */
+            margin: 0 10px; /* Adiciona margem lateral para espaçamento entre os itens */
         }
 
         nav ul li a {
@@ -289,7 +289,7 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        gap: 10px;
+        gap: 8px;
     }
     .saudacao{
          font-size:14px;
@@ -304,7 +304,7 @@ button:hover {
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        gap: 10px;
+        gap: 8px;
     }
      .saudacao{
          font-size:14px;
@@ -325,7 +325,7 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height:12rem;
-        gap:10px
+        gap:8px
     }
 }
 @media (max-width: 485px) {
@@ -337,6 +337,6 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         /. height:12rem; ./
-        gap:10px
+        gap:8px
     }
 }
