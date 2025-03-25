@@ -244,6 +244,7 @@ body {
             justify-content: center; /* Centraliza os itens horizontalmente */
             margin: 0;
             padding: 0; /* Remove padding padrão */
+             width: 90%;
         }
 
         nav ul li {
