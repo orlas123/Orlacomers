@@ -25,9 +25,9 @@ body {
     max-width: 1250px;
 }
 .containerPrincipal{
-    padding: 2rem;
+    padding: 0;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 13700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,14 +39,11 @@ body {
 #products {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px 5px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    
+    width: 100%;   
     padding:5px;
-    
-    
    /* overflow: hidden;*/
 }
 
@@ -109,6 +106,11 @@ body {
 }
 #cart{
     color: white;
+    width: 100%;
+    height:100%
+}
+#cart.li{
+    list-stayle:none;
 }
 
 #cartCount {
@@ -144,14 +146,14 @@ body {
 #profile {
     width: 100%;
     height: 350px; 
-    color:white;
+    color:black;
 }
 
 #nome, #numero {
     width: 210px;
     height: 30px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #loginButton {
@@ -161,6 +163,8 @@ body {
 .cabesalho {
     display: flex;
     justify-content: space-between;
+    justify-content:center;
+    aling-items:center;
    position: fixed;
     top: 0;
     left: 0;
@@ -184,6 +188,8 @@ body {
    align-items: center;
    flex: 2;
     padding: 10px;
+     width: 100%;
+    
 }
 .cabesalho  a{
     text-decoration: none;
@@ -216,7 +222,7 @@ body {
    color:black;
 }
 .whatssap:hover{
-    border-radius: 2px;
+    border-radius: 1px;
      background-color:white;
 }
 .whatssap i{
@@ -281,7 +287,7 @@ button:hover {
 /* Estilos Responsivos */
 @media (max-width: 900px) {
     .containerPrincipal {
-        padding: 2px;
+        padding: 1px;
         font-size: 1rem;
     }
     #products {
@@ -293,7 +299,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .containerPrincipal {
-        padding: 2px;
+        padding: 1px;
         font-size: 1rem;
     }
     #products {
@@ -305,7 +311,7 @@ button:hover {
 
 @media (max-width: 481px) {
     .containerPrincipal {
-        padding: 2px;
+        padding: 1px;
         font-size: 1rem;
     }
     #products {
@@ -317,13 +323,13 @@ button:hover {
 }
 @media (max-width: 485px) {
     .containerPrincipal {
-        padding: 2px;
+        padding: 1px;
         font-size: 1rem;
     }
     #products {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-         height:12rem;
+        /. height:12rem; ./
         gap:10px
     }
 }
