@@ -301,6 +301,9 @@ button:hover {
         width: 100%;
         gap: 10px;
     }
+    .saudacao{
+         font-size:14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -312,6 +315,9 @@ button:hover {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         gap: 10px;
+    }
+     .saudacao{
+         font-size:14px;
     }
 }
 
