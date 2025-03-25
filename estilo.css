@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden; /* Adicionado para evitar rolagem horizontal */
     background-color: rgb(250, 7, 7);
+     padding-top: 60px;
 }
    .saudacao {
     display: flex;
