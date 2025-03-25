@@ -26,15 +26,16 @@ body {
     margin: 0 auto;
     max-width: 1250px;
 }
-.containerPrincipal{
-    padding: 0;
+
+    .containerPrincipal {
+    padding: 0; /* Certifique-se de que não há padding em outros elementos */
     margin: 0 auto;
     max-width: 1260px;
+    width: 100%; /* Adicione esta linha */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
 }
 
 /* Grid de produtos */
