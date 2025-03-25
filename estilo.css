@@ -13,7 +13,7 @@ body {
     align-items: center; /* Corrigido de 'align-item' para 'align-items' */
     color: red;
     font-size: 1rem; 
-    margin-top: 2rem;
+    
     margin: 0 auto; /* Adicionado para centralizar */
     border-radius: 5px;
     background-color: white;
