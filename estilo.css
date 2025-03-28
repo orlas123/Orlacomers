@@ -143,10 +143,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    margin: 0 2rem auto;
+    margin:  2rem auto;
     text-align: center;
 }
-#install-button{
+#install-prompt{
     margin-bottom:10px;
 }{
    background-color: #218838;
