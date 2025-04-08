@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const listItem = document.createElement('li');
             listItem.innerHTML = `
-                <img src="${image}" alt="${product}" style="width: 138px; height: 130px;"> 
+                <img src="${image}" alt="${product}" style="width: 134px; height: 130px;"> 
                 ${product} - ${price}₣ 
                 <div class="quantity-controls">
                     <button class="decrease">➖</button>
@@ -287,5 +287,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Exemplo de quando mostrar o prompt de instalação
     // Isso poderia ser baseado em condições específicas em seu aplicativo
-    setTimeout(showInstallPrompt, 2000); // Exibe o prompt após 2 segundos como demonstração
+    setTimeout(showInstallPrompt, 1000); // Exibe o prompt após 2 segundos como demonstração
 });
+
+  
+        // Registro do Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js').then((registration) => {
+                    console.log('Service Worker registrado com sucesso:', registration);
+                }).catch((error) => {
+                    console.log('Falha ao registrar o Service Worker:', error);
+                });
+            });
+        }
+    
