@@ -175,14 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Evento para mostrar a seção do painel do vendedor
-    document.getElementById('sellerPanelLink').addEventListener('click', (event) => {
-        event.preventDefault();
-        // Ocultar todas as seções
-        document.getElementById('cart').style.display = 'none';
-        document.getElementById('profile').style.display = 'none';
-        document.getElementById('products').style.display = 'none';
-        document.getElementById('sellerPanel').style.display = 'block'; // Mostrar o painel do vendedor
-    });
+   
 
     // Modal para imagens
     const modal = document.getElementById("imageModal");
