@@ -4,7 +4,7 @@
   "short_name": "orlas",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#FF0000",
+  "background_color": "#FFFFFF",
   "theme_color": "#ffffff",
   "icons": [
     {
