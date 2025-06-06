@@ -112,8 +112,12 @@ body {
 #cart{
     color: white;
     width: 100%;
-    
-   
+    height: auto;
+    list-stayle:none; 
+    text-aling:center:
+}
+#cart ul{
+     list-stayle:none;   
 }
 #cartItems{
     list-stayle:none;
